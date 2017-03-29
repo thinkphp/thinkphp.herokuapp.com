@@ -10,8 +10,8 @@ I'm Full Stack-Engineer and Open-Source contributor that loves to build tools an
 
 ## What to read more?
 
-GitHub   : http://github.com/thinkphp
-Projects : http://thinkphp.github.com/
-Twitter  : http://twitter.com
-LinkedIn : https://www.linkedin.com/in/statescuadrian
+GitHub   : [http://github.com/thinkphp] (http://github.com/thinkphp)
+Projects : [http://thinkphp.github.com] (http://thinkphp.github.com)
+Twitter  : [http://twitter.com]
+LinkedIn : [https://www.linkedin.com/in/statescuadrian]
 
