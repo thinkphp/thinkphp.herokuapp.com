@@ -32,7 +32,7 @@ kramdown:
 links:
     - name:     About
       url:      https://thinkphp.herokuapp.com/about
-      external: true
+      external: false
     - name:     GitHub
       url:      http://github.com/thinkphp
       external: true
