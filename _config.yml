@@ -7,7 +7,6 @@ url: "https://thinkphp.herokuapp.com"
 twitter_username: thinkphp
 github_username:  thinkphp
 disqus_shortname: thinkphp
-share: true
 
 # Build settings
 markdown: kramdown
