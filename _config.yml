@@ -1,0 +1,38 @@
+# Site settings
+title: AvalZ
+email: avalenza89@gmail.com
+description: "Application Security and Development"
+baseurl: ""
+url: "https://avalz.it"
+twitter_username: AvalZ89
+github_username:  AvalZ
+disqus_shortname: avalz-it
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+gems: ['kramdown']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
+
+redcarpet:
+    extensions: [ 'tables', 'autolink' ]
+
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+
+    syntax_highlighter_opts:
+        span:
+            line_numbers: false
+        block:
+            line_numbers: true
+
+
+links:
+    - name:     GitHub
+      url:      http://github.com/AvalZ
+      external: true
+    - name:     LinkedIn
+      url:      https://it.linkedin.com/in/andrea-valenza-70bb7785
+      external: true
