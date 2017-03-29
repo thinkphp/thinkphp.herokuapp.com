@@ -44,3 +44,33 @@ def triangles():
         yield t
 
 list = []
+
+def getTriangle(gen, n):
+
+    for i in xrange(1, n):  
+
+        list.append(gen.next())
+
+    return list  
+
+def isTriangle(num):
+
+   allTriangles = getTriangle(triangles(), 201)
+    
+   if num in allTriangles:
+
+      return True
+
+   else:
+
+      return False    
+
+def solution():
+
+    return sum(1 for x in load_words() if isTriangle(string_to_num(x)))
+    
+if __name__ == '__main__':
+
+   print(solution())
+   
+   ```
