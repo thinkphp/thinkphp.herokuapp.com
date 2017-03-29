@@ -1,5 +1,7 @@
 ## Project Euler
 
+### Coded triangle numbers
+
 ### Problem 42 Solved in Python using Generators. Answer: 162
 
 The nth term of the sequence of triangle numbers is given by, tn = ½n(n+1); so the first ten triangle numbers are:
