@@ -30,9 +30,13 @@ kramdown:
 
 
 links:
+    - name:     About
+      url:      https://thinkphp.herokuapp.com/about
+      external: true
     - name:     GitHub
       url:      http://github.com/thinkphp
       external: true
     - name:     LinkedIn
       url:      http://linkedin.com/in/statescuadrian
       external: true
+
