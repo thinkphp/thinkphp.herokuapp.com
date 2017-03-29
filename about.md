@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-## Hello, my name is Adrian Statescu
+## Hello, my name is Adrian Statescu.
 
 I'm Full Stack-Engineer and Open-Source contributor that loves to build tools and app that drive use adoption.
 
