@@ -38,4 +38,6 @@ links:
     - name:     LinkedIn
       url:      http://linkedin.com/in/statescuadrian
       external: true
+    - name:     Contact
+      url:      /contact
 
