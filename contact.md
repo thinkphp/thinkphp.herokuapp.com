@@ -4,4 +4,4 @@ title: Contact
 permalink: /contact/
 ---
 
-### Email: mergesortv[at] gmail.com
+### Email: mergesortv  [at]  gmail [ dot ] com
