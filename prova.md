@@ -1,6 +1,0 @@
----
----
-
-# Prova
-
-Pagina di prova
