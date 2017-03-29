@@ -14,7 +14,7 @@ The bubble sort. We compare K(1) with K(2), interchange R(1) with R(2) if the ke
 
 The method is called bubble sorting because large elements bubble up to their proper position. After each pass through the file, it is not hard to see that all records above and including the last one to be exchanged must be in their final position, so they need not be examined on subsequence passes.
 
-```markdown
+``` ruby
 
 Algorithm B (Bubble Sort). Records R(1),...,R(N) are rearranged
 in place; after sorting is complete their keys will be in
