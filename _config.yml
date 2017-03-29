@@ -1,12 +1,12 @@
 # Site settings
-title: AvalZ
-email: avalenza89@gmail.com
+title: Adrian
+email: mergesortv@gmail.com
 description: "Application Security and Development"
 baseurl: ""
-url: "https://avalz.it"
-twitter_username: AvalZ89
-github_username:  AvalZ
-disqus_shortname: avalz-it
+url: "http://adrianstatescu.com"
+twitter_username: thinkphp
+github_username:  thinkphp
+disqus_shortname: thinkphp
 
 # Build settings
 markdown: kramdown
@@ -31,8 +31,8 @@ kramdown:
 
 links:
     - name:     GitHub
-      url:      http://github.com/AvalZ
+      url:      http://github.com/thinkphp
       external: true
     - name:     LinkedIn
-      url:      https://it.linkedin.com/in/andrea-valenza-70bb7785
+      url:      http://linkedin.com/in/statescuadrian
       external: true
