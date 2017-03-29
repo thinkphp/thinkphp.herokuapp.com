@@ -4,5 +4,4 @@ title: Contact
 permalink: /contact/
 ---
 
-Email: mergesortv@gmail.com
-Website: http://adrianstatescu.com
+### Email: mergesortv[at] gmail.com
