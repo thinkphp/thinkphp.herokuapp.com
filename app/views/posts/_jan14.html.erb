@@ -1,0 +1,60 @@
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <h2 class="post-title">
+                Did my first simple React app , and did read gem 'kaminari' that I will be using to paginate my page.
+              </h2>
+              <%= render 'layouts/favicons' %>
+              <p>January 14,2017</p>
+              <p class="post-subtitle">
+                  Tackled the fundamentals of javascript the entire day, from doing js code challenges to reading react and made my first simple react app.But still
+                  trying to understand javascript as I consider myself a newbie.There is so much to learn , if you feel like your head hurts that means you are learning.
+                  Take a deep breath and have a break , browse videos/youtube videos to relax a bit, then go back learning.
+                  <p>Familiarizing <code>React</code> framework:</p>
+                  <pre><code>
+                    var HelloWorld = React.createClass ({
+                           propTypes: {
+                             name: React.PropTypes.string,
+                             isPerson: React.PropTypes.bool
+                           },
+                           getDefaultProps: function() {
+                             return {
+                               name: 'KBOY'
+                             }
+                           },
+                           render: function () {
+                             var greeting = "World";
+                            if (this.props.isPerson) {
+                              greeting = (<Person name= {this.props.name} />)
+                            }
+                             return (
+                               %h1 Hello {greeting}
+                             )
+                           }
+                       });
+                        var Person = React.createClass ({
+                           propTypes: {
+                             name: React.PropTypes.string.isRequired
+                           },
+                           getDefaultProps: function() {
+                             return {
+                               name: 'KBOY'
+                             }
+                           },
+                           render: function () {
+                             return (
+                               <span>{this.props.name}</span>
+                             )
+                           }
+                       });
+                       ReactDOM.render (
+                         <HelloWorld  name= "Kirby" isPerson={true} />,
+                         document.getElementById('area')
+                       );
+                  </code></pre>
+              </p>
+            </div>
+        </div>
+    </div>
+</article>

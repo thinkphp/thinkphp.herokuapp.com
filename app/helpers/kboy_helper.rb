@@ -1,0 +1,2 @@
+module KboyHelper
+end

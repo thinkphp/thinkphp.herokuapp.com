@@ -1,0 +1,44 @@
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <h2 class="post-title">
+                Pursuing the cs50 harvard certification: Introduction to Computer Science.
+              </h2>
+              <%= render 'layouts/favicons' %>
+              <p>January 15,2017</p>
+              <p class="post-subtitle">
+                I consider the day as a rest day on programming.Will continue to study further tomorrow the fundamentals , theories and algorithms in C.
+                Which harvard cs50 syllabus is , then I think python and machine learning and artificial intelligence is part of the syllabus as well.Well that
+                would be interesting.
+                  <p>A simple <code>Algorithm</code> wherein the user inputs an integer from 0-23 then a hash(#) output will be the outcome inspired from mario game.</p>
+                  <pre><code>
+#include <stdio.h>
+#include <cs50.h>
+
+int main()
+{
+int height;
+
+    do {
+        printf("Height:");
+         height = GetInt();
+         }
+         while ((height < 0) || (height > 23));
+
+    for (int x = 1; x <= height; x++){
+        for (int spaces = (height - x);  spaces > 0; spaces--){
+        printf(" ");
+        }
+            for (int hash = 1; hash <= (x + 1); hash++) {
+            printf("#");
+            }
+             printf("\n");
+    }
+}
+                  </code></pre>
+              </p>
+            </div>
+        </div>
+    </div>
+</article>
