@@ -1,5 +1,6 @@
 ---
-layout: posts
+layout: post
+disqus: y
 title: Generators
 ---
 
