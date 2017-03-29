@@ -8,9 +8,9 @@ permalink: /about/
 
 I'm Full Stack-Engineer and Open-Source contributor that loves to build tools and app that drive use adoption.
 
-## What to read more?
+## What to read more? Check out my sites below:
 
-<p>WebSite    : <a href="http://adrianstatescu.com">http://adrianstatescu.com</a></p>
-<p>Project : <a href="http://thinkphp.github.com">http://thinkphp.github.com</a></p>
-<p>PHP : <a href="http://thinkphp.ro">http://thinkphp.ro</a></p>
+<p><a href="http://adrianstatescu.com">http://adrianstatescu.com</a></p>
+<p><a href="http://thinkphp.github.com">http://thinkphp.github.com</a></p>
+<p><a href="http://thinkphp.ro">http://thinkphp.ro</a></p>
 
