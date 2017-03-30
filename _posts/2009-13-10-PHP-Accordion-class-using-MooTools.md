@@ -1,3 +1,12 @@
+---
+layout: post
+disqus: y
+title: PHP Accordion Class using MooTools
+---
+
+PHP Accordion Class using MooTools
+----------------------------------
+
 I've created a PHP Accordion Class to help make the development of the accordions easier and fast.
 
 ```php
