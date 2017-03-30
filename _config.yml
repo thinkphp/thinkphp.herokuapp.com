@@ -35,6 +35,6 @@ links:
     - name:     Projects
       url:      http://thinkphp.github.io
       external: true
-    - name:     Contact
-      url:      /contact
+    - name:     Posts
+      url:      /
 
