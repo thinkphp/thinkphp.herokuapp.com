@@ -64,3 +64,24 @@ class Accordion {
 
 
 ```
+
+Usage:
+
+```php
+$ob = new Accordion('toggler_class','item_class');
+
+$ob->addItem('toggler_header1','xyz');
+
+$ob->addItem('toggler_header2','xyz');
+
+$ob->addItem('toggler_header2','xyz');
+
+$ob->output();
+
+echo'<script type="text/javascript">'.$ob->output_js().'</script>';
+
+$css = ' .toggler{border: 1px solid #ccc;margin: 1px}';
+             
+echo$ob->addStyle($css);p
+
+```
