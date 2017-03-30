@@ -83,5 +83,6 @@ echo'<script type="text/javascript">'.$ob->output_js().'</script>';
 $css = ' .toggler{border: 1px solid #ccc;margin: 1px}';
              
 echo$ob->addStyle($css);p
-
 ```
+
+You can see <a href="http://thinkphp.ro/apps/php-hacks/accordion/accortion2.php">Accodion in Action</a>
