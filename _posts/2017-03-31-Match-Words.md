@@ -17,7 +17,7 @@ in the text, in the order that they appear in the text given built
 so that, for any two words in a row, the last two letters of the first word to coincide with the
 first two letters of the next word.
 
-```C++
+```c++
 int matchWords(String s1, String s2) {
 
     return s1[strlen(s1)-2] == s2[0] && s1[strlen(s1)-1] == s2[1];   
