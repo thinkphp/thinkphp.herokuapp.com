@@ -93,4 +93,4 @@ $css = ' .toggler{border: 1px solid #ccc;margin: 1px}';
 echo$ob->addStyle($css);
 ```
 
-You can see [Accordion in Action](http://thinkphp.ro/apps/php-hacks/accordion/accortion2.php)
+You can see [Accordion in Action](http://thinkphp.ro/apps/php-hacks/accordions/accordion2.php)
