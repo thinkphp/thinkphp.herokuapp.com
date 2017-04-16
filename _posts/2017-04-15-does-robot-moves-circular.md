@@ -37,7 +37,7 @@ Circular
 Circular
 Not Circular
 
-```C
+```c++
 #include <stdio.h>
 int main() {
 
@@ -109,4 +109,4 @@ int main() {
 
 return(0);
 }
-```C
+```
