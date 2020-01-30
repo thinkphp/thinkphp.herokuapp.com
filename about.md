@@ -4,9 +4,6 @@ title: About
 permalink: /about/
 ---
 
-About
------
-
   Homepage    : [http://adrianstatescu.com](http://adrianstatescu.com)
 
   Projects    : [http://thinkphp.github.io](http://thinkphp.github.io)
