@@ -38,6 +38,9 @@ links:
     - name:     LinkedIn
       url:      http://linkedin.com/in/statescuadrian
       external: true
+    - name:     Xing
+      url:      https://www.xing.com/profile/Adrian_Statescu
+      external: true
     - name:     Contact
       url:      /contact
 
