@@ -7,15 +7,17 @@ title: Geometrie
 Geometrie - Introducere
 --------------
 
-          Matematica este una dintre cele mai vechi stiinte; posibilitatea omului de a numara si de a face socoteli a constituit
+Matematica este una dintre cele mai vechi stiinte; posibilitatea omului de a numara si de a face socoteli a constituit
 una din primele lui victorii in drumul spre cucerirea naturii. Ea a aparut din nevoile practice ale oamenilor, din masurarea loturilor
 de pamant si a capacitatii vaselor, din calcularea timpului si a mecanicii.
-          Notiunile si concluziile matematicii cu tot caracterul lor abstract isi au radacinile in realitate si-si gasesc vaste aplicatii
+
+Notiunile si concluziile matematicii cu tot caracterul lor abstract isi au radacinile in realitate si-si gasesc vaste aplicatii
 in alte stiinte, in tehnica, in toata practica vietii. In general progresul stiintei este legat de progresul matematicii. Fara matematica 
 ar fi fost imposibila intreaga tehnica moderna, cat si dezvoltarea mecanicii, astronimiei, informaticii si in buna masura a chimiei. La inceput
 matematica continea aritmetica - stiinta numerelor si geometria - stiinta figurilor. Mai tarziu s-au impus alte discipline matematice, cum sunt
 algebra, analiza sau disciplinele care au un pronuntat caracter aplicativ, cum sunt astronomia si mecanica.
-         Printre disciplinele metematice, geometria a fost aceea care i-a pasionat mult pe matematicieni in decursul timpurilor, atat prin caracterul
+
+Printre disciplinele metematice, geometria a fost aceea care i-a pasionat mult pe matematicieni in decursul timpurilor, atat prin caracterul
 ei abstract cat si prin legaturile pe care le are cu problemele filosofice ce se refera la notiunile de timp, spatiu si materie. Antichitatea, intelegand
 stiinta egipteana, babiloniana, chineza, araba si in special greaca, ne-a lasat ca mostenire stiintifica importanta, geometria, denumita si Geometria lui
 Euclid, deoarece de la Euclid, savant grec ce a trait in jurul anului 285 i.e.n, ne-a ramas o expunere completa a acestei geometrii compusa din 13 carti si
