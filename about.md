@@ -7,9 +7,11 @@ permalink: /about/
 About
 -----
 
-Homepage  : [http://adrianstatescu.com](http://adrianstatescu.com)
-Projects  : [http://thinkphp.github.io](http://thinkphp.github.io)
-Portofolio: [http://thinkphp.ro](http://thinkphp.ro)
+ *Homepage  : [http://adrianstatescu.com](http://adrianstatescu.com)
+
+ *Projects  : [http://thinkphp.github.io](http://thinkphp.github.io)
+
+ *Portofolio: [http://thinkphp.ro](http://thinkphp.ro)
 
 
 
