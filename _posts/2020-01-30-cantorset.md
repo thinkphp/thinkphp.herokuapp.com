@@ -37,3 +37,7 @@ fun main(args: Array<String>) {
 	matrix.forEach { println(it) } 
 }
 ```
+
+Demo:
+
+[https://ideone.com/mVNpaS](https://ideone.com/mVNpaS)
