@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-  Homepage    : [http://adrianstatescu.com](http://adrianstatescu.ch)
+  Homepage    : [http://adrianstatescu.ch](http://adrianstatescu.ch)
 
   Projects    : [http://thinkphp.github.io](http://thinkphp.github.io)
 
-  Portofolio  : [http://thinkphp.ro](http://thinkphp.ch)
+  Portofolio  : [http://thinkphp.ch](http://thinkphp.ch)
 
   GrandMaster : [chess.com/member/thinkphp](https://www.chess.com/member/thinkphp)
 
