@@ -7,7 +7,7 @@ title: Geometrie
 Geometrie - Introducere
 --------------
 
-Matematica este una dintre cele mai vechi stiinte; posibilitatea omului de a numara si de a face socoteli a constituit
+Matematica(Maths) este una dintre cele mai vechi stiinte; posibilitatea omului de a numara si de a face socoteli a constituit
 una din primele lui victorii in drumul spre cucerirea naturii. Ea a aparut din nevoile practice ale oamenilor, din masurarea loturilor
 de pamant si a capacitatii vaselor, din calcularea timpului si a mecanicii.
 
