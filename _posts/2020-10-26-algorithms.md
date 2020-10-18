@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: y
-title: Introducing to Algorithms
+title: algorithms
 ---
 
 Intro in Algorithms
