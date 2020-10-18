@@ -21,7 +21,7 @@ Algorithms
 * Apps.
 * Introducing to Computing Cloud
 * Google Cloud Computing, Azure, RacketSpace, EC2 Amazon, IBM
-* Computer Science. DEf
+* Computer Science. Def
 
 
 
