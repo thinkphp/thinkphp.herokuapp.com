@@ -5,7 +5,7 @@ title: algorithms
 ---
 
 Algorithms
-----------
+----
 
 * Notiuni generale. Definitie.
 * Trei exemple din realitate.
