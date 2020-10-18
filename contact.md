@@ -6,4 +6,4 @@ permalink: /contact/
 
  Email: [mergesortv@gmail.com](mergesortv@gmail.com)
 
- Website: [http://adrianstatescu.com](http://adrianstatescu.com)
+ Website: [http://adrianstatescu.ch](http://adrianstatescu.ch)
