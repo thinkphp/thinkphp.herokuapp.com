@@ -19,6 +19,8 @@ Algorithms
 * Apps.
 * Introducing to Python.
 * Apps.
+* Introducing to Computing Cloud
+* Google Cloud Computing, Azure, RacketSpace, EC2 Amazon
 
 
 
