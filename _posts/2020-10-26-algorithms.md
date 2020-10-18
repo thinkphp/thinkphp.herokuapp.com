@@ -4,8 +4,8 @@ disqus: y
 title: algorithms
 ---
 
-Intro in Algorithms
-------------------
+Algorithms
+----------
 
 * Notiuni generale. Definitie.
 * Trei exemple din realitate.
