@@ -19,7 +19,6 @@ Intro in Algorithms
 * Apps.
 * Introducing to Python.
 * Apps.
-* Intro to C++. Apps
 
 
 
