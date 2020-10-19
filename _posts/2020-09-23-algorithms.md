@@ -8,7 +8,7 @@ Algorithms
 ----
 * Computer Science. Definition.
 * Notiuni generale. Definitie.
-* Trei exemple din realitate. Concluzii: orice algoritm porneste de la ceva si se ajunge la obtinerea unui out
+* Trei exemple din realitate. Analiza. Concluzii: orice algoritm porneste de la ceva si se ajunge la obtinerea unui out
 * Enuntul unei probleme. Date de intrare. Date de iesire. Etapele rezolvarii unei probleme.
 * Definitie. Caracteristici.
 * Obiectele cu care lucreaza algoritmii(date, variabile, expresii)
