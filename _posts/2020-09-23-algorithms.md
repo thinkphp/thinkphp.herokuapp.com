@@ -14,7 +14,7 @@ Algorithms
 * Obiectele cu care lucreaza algoritmii(date, variabile, expresii)
 * Operatiile pe care le efectueaza algoritmii (operatii de citire/scriere, atribuire si de decizie)
 * Principiile programarii structurate. Ordinea de executare a operatiilor. Structura: o anumita imbinare a operatiilor.
-* Structurile de baza: liniara, alternativa, repetitiva.
+* Structurile de baza: liniara, alternativa, repetitiva. Exemple.
 * Descrierea algoritmilor in limbaj pseudocod.
 * Applications.
 * Introducing to Python / C /  C++. / Ruby.
