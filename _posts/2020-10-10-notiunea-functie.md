@@ -9,7 +9,7 @@ Notiunea de functie
 
 #### 1. Definitia functiei.
 
-Fie E si F doua functii. Daca fiecarui element al multimii E facem sa corespunda un element, si numai unul , din multimea F, atunci spunem ca am definit o functie f
+Fie E si F doua multimi. Daca fiecarui element al multimii E facem sa corespunda un element, si numai unul , din multimea F, atunci spunem ca am definit o functie f
 pe E cu valori in F sau o aplicatie a lui E in F sau , mai mult, o transformare a lui E in F.
 
 O functie se noteaza cu o litera mica f sau g sau h, etc...
