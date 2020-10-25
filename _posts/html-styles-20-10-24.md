@@ -104,6 +104,7 @@ Proprietatea CSS font-family defineste tipul fontului folosit pentru un anumit H
 
 Proprietatea CSS font-size defineste size-ul unui element.
 
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -113,6 +114,7 @@ Proprietatea CSS font-size defineste size-ul unui element.
 
 </body>
 </html>
+```
 
 #### Text Alignment
 
