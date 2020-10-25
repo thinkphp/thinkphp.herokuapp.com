@@ -6,8 +6,7 @@ title: HTML Styles
 
 ### HTML Styles
 
-
-Atributul HTML "style"  este folosit pentru a adauga stiluri unui element. De exemplu: color, size, alignment, etc.
+Atributul HTML "style"  este folosit pentru a adauga stiluri unui element HTML. De exemplu: color, size, alignment, etc.
 
 ```html
 <!DOCTYPE html>
@@ -25,8 +24,7 @@ Atributul HTML "style"  este folosit pentru a adauga stiluri unui element. De ex
 ```
 
 HTML Style Attribute
-
-Setting the style of an HTML element, can be done with the style attribute.
+-----------
 
 Setarea stilului unui element HTML se poate realiza cu "style" attribute.
 
@@ -35,4 +33,15 @@ The HTML style attribute are urmatoarea sintaxa:
 ```html
    <tagname style="property:value;">
 ```
+
+- property is a CSS proprietate.
+- value este un CSS valoare.
+
+#### Background Color
+#### Text Color
+#### Fonts
+#### Text Size
+#### Text Alignment
+
+
 
