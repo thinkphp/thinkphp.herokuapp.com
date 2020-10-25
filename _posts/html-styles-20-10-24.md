@@ -134,5 +134,12 @@ exemplu: text-align: center, left, right.
 </html>
 ```
 
+Rezumatul capitolului:
 
+- foloseste atributul "style" pentru stilizarea unui HTML Element.
+- foloseste proprietatea CSS background-color pentru background
+- foloseste proprietatea CSS color pentru culoarea textului.
+- foloseste proprietatea CSS font-family pentru tipul fontului(verdana, arial, courier, etc).
+- foloseste proprietatea CSS font-size pentru marimea textului.
+- foloseste proprietatea CSS text-align pentru alinierea textului.
 
