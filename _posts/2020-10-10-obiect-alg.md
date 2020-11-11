@@ -75,4 +75,81 @@ Observatie: Cu toate ca o variabila are un nume unic, continutul ei poate sa fie
 
 #### 3. Expresii
 
+In scopul efectuarii calculelor, sau a luarii anumitor decizii algoritmii folosesc expresii. O expresie este alcatuita din unul sau mai multi operanzi legati intre ei prin operatori.
+
+- Operanzii pot fi variabile sau constante
+- Operatorii au rolul de a preciza operatiile care se efectueaza.
+
+Expresii sunt de doua feluri:
+
+a)- Expresii aritmetice
+b)- Expresii logice
+
+a) Expresii aritmetice. Operanzii sunt variabile sau constante de tip intreg sau real, Operatorii mai des intalniti sunt:
+   - pentru adunare se foloseste operatorul '+'
+   - pentru scadere se foloseste operatorul '-'
+   - pentru inmultire se foloseste operatorul '*'
+   - pentru impartire se foloseste operatorul '/'
+   
+   Exemplu: 
+   Daca a si b sunt variabile de tip intreg care retin 5 , respectiv 8, atunci expresia a + 5 * b + 1 ia valoarea 5 + 5 * 8 + 1, adica 46
+   
+   In pseudocod putem utiliza ca operator orice simbol cu semnificatia  matematica: Radical, partea intreaga []. Daca x este o valoare reala care retine 4.5
+   atunci [x] ia valoarea 4
+   
+ b) Expresii logice
+
+   Anumiti operatori, desi au ca operanzi variabile, constante sau expresii aritmetice produc ca rezultat valori logice: TRUE sau FALSE
+   
+   Din prima categorie fac parte operatorii de comparare:
+   
+   - pentru egalitate folosim operatorul '='
+   - pentru mai mic folosim operatorul '<'
+   - pentru mai mare folosim operatorul '>'
+   - pentru mai mare sau egal folosim operatorul '>='
+   - pentru mai mic sau egal folosim operatorul '<='
+   - pentru inegalitate folosim operatorul '>='
+   
+   Exemplu: Variabila a retine 2, iar variabila b retine 5, Atunci:
+   
+   a < b ia valoarea TRUE
+   a > b ia valoarea FALSE
+   a = b ia valoarea FALSE
+   a != b ia valoarea TRUE
+   a >= 2 ia valoarea TRUE
+   b <= 6 ia valoarea TRUE
+   
+   Alti operatori au ca operanzi valori ogice, expresii logice si produc ca rezultat valori logice: true sau false.
+   
+   Operatorul SAU actioneaza asupra a doi operanzi logici si daca cel putin unul dintre ei este true , rezultatul este true, contrar rezultatul este false.
+   
+   false SAU true ia valoarea true
+   false SAU false ia valoarea false
+   
+   Operatorul SI actioneaza asupra a doi operanzi logici si daca ambii sunt true, rezultatul este true , rezultatul este true, contrar rezultatul este false.
+   
+   true SI true ia valoarea true
+   true SI false ia valoarea false
+   
+   Operatorul NOT actioneaza asupra unui operand logic si daca operandul este true, rezultatul este false, contrar rezultatul este true
+   
+   NOT true ia valoarea false
+   NOT false ia valoarea true
+   
+   Relatii importante:
+   
+   NOT (a > b) este echivalent cu a scrie a <= b. Se poate gandi asa: daca a nu este mai mare sau egal cu b, atunci a este mai mic sau egal cu b si este corect.
+   
+   NOT(a<b) <=> a >= b
+   NOT(a<=b) <=> a > b
+   NOT(a>=b) <=> a < b
+   
+   RElatiile lui de Morgan:
+   
+   NOT (a SI B) = NOT(a) SAU NOT(b)
+   NOT (a SAU B) = NOT(a) SI NOT(b)
+   
+   
+ 
+   
 
