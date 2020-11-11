@@ -1,7 +1,7 @@
 {
   "name": "Jekyll on Heroku",
   "description": "Jekyll on Heroku",
-  "repository": "https://github.com/thinkphp/thinkphp",
-  "website": "http://adrianstatescu.com",
+  "repository": "https://github.com/thinkphp/thinkphp.herokuapp.com",
+  "website": "http://adrianstatescu.ch",
   "keywords": ["jekyll", "static"]
 }
