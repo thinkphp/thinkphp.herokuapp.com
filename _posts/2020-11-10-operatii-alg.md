@@ -43,3 +43,30 @@ a variabilei a. Aceasta inseamna ca se asteapta introducerea de la tastatura a d
   a
   
   La scriere apare pe monitor numarul 8 - continutul variabilei a.
+  
+  Observatii:
+  
+  Dupa scriere, continutul variabile ramane neschimbat.
+  
+  Fie secventa de la jos. Introducem de la tastatura 17. Pe monitor va apare de doua ori numarul 17.
+  
+  intreg a
+  citeste a
+  scrie a
+  scrie a
+  
+  La o noua citire, continutul vechi al variabilei se pierde.
+  
+  intreg a
+  citeste a
+  citeste a
+  Scrie a
+  
+  Se pot citi mai multe variabile cu o singura opeatie Citeste si se pot tipari valorile retinute de mai multe variabile cu o singura operatie Scrie.
+  
+  real a,b,c,d
+  citeste a,b,c,d
+  scrie a,b,c,d
+  
+  #### 2. Atribuiri
+  
