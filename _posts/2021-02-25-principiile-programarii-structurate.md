@@ -4,7 +4,7 @@ disqus: y
 title: Principiile programarii structurate
 ---
 
-     Programarea structurata aparut la inceputul anului 1970 si este un concept cu o importanta fundamentala in scrierea algoritmilor. Programarea
+Programarea structurata aparut la inceputul anului 1970 si este un concept cu o importanta fundamentala in scrierea algoritmilor. Programarea
 structurata are la baza teorema de structura Bohm-Jacopini care afirma ca orice algoritm cu o intrare (input) si o iesire (output) poate fi reprezentat
 ca o combinatie de trei tipuri de structuri de control (control flow):
 
