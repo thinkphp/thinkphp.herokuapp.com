@@ -1,7 +1,7 @@
 ---
 layout: post
 disqus: y
-title: Caracteristici alg
+title: Caracteristicile algorimilor
 ---
 
 Caracteristicile algoritmilor.
