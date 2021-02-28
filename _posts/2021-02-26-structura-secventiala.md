@@ -31,20 +31,21 @@ Se citesc doua variabile reale. Sa se interschimbe continutul lor si sa se afise
 
 Solutia in limbajul pseudocod:
 
-real a, b, aux;
-Citeste a, b
-aux <-- a
-a <--  b
-b <-- aux
-Scrie a, b
+ real a, b, aux;
+ Citeste a, b
+ aux <-- a
+ a <--  b
+ b <-- aux
+ Scrie a, b
 
-solutia in limbajul de programare c++:
-float a,b,aux;
-cin>>a>>b;
-aux = a;
-a = b;
-b = aux;
-cout<<a<<", "<<b;
+Solutia in limbajul de programare c++:
+
+ float a,b,aux;
+ cin>>a>>b;
+ aux = a;
+ a = b;
+ b = aux;
+ cout<<a<<", "<<b;
 
 ### Problema 2:
 
