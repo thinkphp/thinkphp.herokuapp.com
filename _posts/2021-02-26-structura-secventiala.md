@@ -17,11 +17,11 @@ S2
 
 este o structura liniara.
 
-instructiune1;
-instructiune2;
-instructiune3;
---------------
-instructiuneN;
+    instructiune1;
+    instructiune2;
+    instructiune3;
+    --------------
+    instructiuneN;
  
 Ordinea de executare este: instructiune1, instructiune2, instructiune3....pana la instructiuneN
 
@@ -31,21 +31,21 @@ Se citesc doua variabile reale. Sa se interschimbe continutul lor si sa se afise
 
 Solutia in limbajul pseudocod:
 
- real a, b, aux;
- Citeste a, b
- aux <-- a
- a <--  b
- b <-- aux
- Scrie a, b
+    real a, b, aux;
+    Citeste a, b
+    aux <-- a
+    a <--  b
+    b <-- aux
+    Scrie a, b
 
 Solutia in limbajul de programare c++:
 
- float a,b,aux;
- cin>>a>>b;
- aux = a;
- a = b;
- b = aux;
- cout<<a<<", "<<b;
+    float a,b,aux;
+    cin>>a>>b;
+    aux = a;
+    a = b;
+    b = aux;
+    cout<<a<<", "<<b;
 
 ### Problema 2:
 
