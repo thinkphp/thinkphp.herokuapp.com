@@ -32,7 +32,7 @@ Daca E atunci
 
 DAca la evaluare E returneaza true se executa instructiune, altfel se trece mai departe.
 
-Problema 1:
+### Problema 1:
 
 Sa se scrie un algoritm care citeste un numar natural (comanda). Daca acesta este 0 se vor citi doua numere intregi a si b
 si se va afisa suma lor, contrar se vor citi doua numere reale x si y si se va afisa suma lor.
@@ -68,9 +68,14 @@ in limbajul de programare c++:
         cout<<s2;
   }
 
-Problema 2:
+### Problema 2:
 
 Se citesc doua numere reale a si b. Sa se rezolve ecuatia de gradul 1: ax + b = 0
+
+### Problema 3:
+
+Se citesc trei numere reale a, b si c. Sa se rezolve ecuatia de gradul 2: ax^2 + bx + c = 0
+ 
 
            
 
