@@ -2,7 +2,7 @@
 
 ## Notes & Lectures 
     
-## Algorithms + data structure = programs
+## Algorithms + Data Structure = Programs
 
 [x] http://thinkphp.herokuapp.com/
 
