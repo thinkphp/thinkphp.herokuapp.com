@@ -1,6 +1,8 @@
-Jekyll on Heroku - 
-----------------
+# Jekyll on Heroku
 
-Notes & Lectures - algorithms + data structure = programs
-* http://thinkphp.herokuapp.com/
+## Notes & Lectures 
+    
+## Algorithms + data structure = programs
+
+[x] http://thinkphp.herokuapp.com/
 
