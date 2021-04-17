@@ -1,6 +1,6 @@
 ---
 layout: post
-disqus: y
+disqus: n
 title: Introducere in Python 3
 ---
 
