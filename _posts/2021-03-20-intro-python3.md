@@ -48,6 +48,6 @@ c) ruleaza versiunea intermediara
 
 Avem trei modalitati prin care putem rula un program Py:
 
- a) in mod interactiv folosind un interpretor Python
- b) stocam programul plain text intr-un file cu extensia .py si rulam cu comanda python3 file.py
- c) putem sa rulam programul dintr-un IDE (Integrated Development Environment). Exemple: PyCharm
+a) in mod interactiv folosind un interpretor Python
+b) stocam programul plain text intr-un file cu extensia .py si rulam cu comanda python3 file.py
+c) putem sa rulam programul dintr-un IDE (Integrated Development Environment). Exemple: PyCharm
