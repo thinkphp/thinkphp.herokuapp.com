@@ -57,6 +57,8 @@ c) putem sa rulam programul dintr-un IDE (Integrated Development Environment). E
 Python 3.8.6 (default, Jan 27 2021, 15:42:20)
 [GCC 10.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
+```python
+
 >>> 1 + 1
 2
 >>> 8 - 1
@@ -144,3 +146,4 @@ False
 True
 >>> 2 < 3 < 2
 False
+```
