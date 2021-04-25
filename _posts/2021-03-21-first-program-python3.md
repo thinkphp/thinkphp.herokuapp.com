@@ -37,7 +37,7 @@ this:
 >>> print("Hello, world!")
 ```
 
-This is an exampleof a print statement, althought it doesn t actually print anything on paper. It display a result on the screen. In this case, the result is the words: Hello, world!
+This is an example of a print statement, althought it doesn t actually print anything on paper. It display a result on the screen. In this case, the result is the words: Hello, world!
 
 The quotations marks in the program mark the beginning and the end of the text to be displayed; they do not appear in the result. The parentheses indicate that print is a function.
 
@@ -72,4 +72,30 @@ What about values like '8' and '23.3'. They look like numbers, but they are in t
 <class 'str'>
 >>> type('42.0')
 <class 'str'>
+```
+
+## Interactive Hello world
+
+The print() function actually tries to print whatever you give it:
+
+- when it is given a string it will print a strings
+- when it is given an integer such as 19, it will print 19
+- when it is given a floating-point number such as 23.33 then will print 23.33
+
+To run the program, if you are using an IDE such as Pycharm, then you can select the file in the left hand tree and from the right mouse button select Run.
+
+If you are running it from the command line type the python3 followed by the name of the file, by example:
+
+user@ubuntu: python3 filename.py
+
+This should be done in the directory where you created the file.
+
+Let's make our program a little more interesting; lets get it to ask us our name and say hello to us personally.
+
+in your filename.py:
+
+```python
+print("Hello, world!")
+user_name = input("Enter the name: ")
+print("Hello, ", user_name)
 ```
