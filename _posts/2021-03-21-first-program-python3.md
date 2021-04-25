@@ -51,6 +51,7 @@ The values belong to different types:
 - 23.34 is a floating-point number
 - 'hello world' is a string
 If you are not sure what type a value has, the interpreter can tell you:
+
 ```python
 >>> type(8)
 <class 'int'>
