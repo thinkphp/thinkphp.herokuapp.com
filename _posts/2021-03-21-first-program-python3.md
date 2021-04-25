@@ -65,7 +65,8 @@ In these results, the word class is used in the sense of a category; a type is a
 Not surprisingly, integers belong to the type int, strings to the type str and floating point numbers belong to the float type.
 
 What about values like '8' and '23.3'. They look like numbers, but they are in the quotations marks like strings:
-```Python
+
+```python
 >>> type('2')
 <class 'str'>
 >>> type('42.0')
