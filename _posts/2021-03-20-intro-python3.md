@@ -51,3 +51,96 @@ Avem trei modalitati prin care putem rula un program Py:
 a) in mod interactiv folosind un interpretor Python
 b) stocam programul plain text intr-un file cu extensia .py si rulam cu comanda python3 file.py
 c) putem sa rulam programul dintr-un IDE (Integrated Development Environment). Exemple: PyCharm
+
+## Python Interactive using REPL
+
+Python 3.8.6 (default, Jan 27 2021, 15:42:20)
+[GCC 10.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1 + 1
+2
+>>> 8 - 1
+7
+>>> 10 * 5
+50
+>>> 10 / 5
+2.0
+>>> 5 // 4
+1
+>>> 5 // 3
+1
+>>> -5 // 3
+-2
+>>> 5.0 // 3.0
+1.0
+>>> -5.0 // 3.0
+-2.0
+>>> 10.0 / 3
+3.3333333333333335
+>>> 7 % 3
+1
+>>> -7 % 3
+2
+>>> 2**3
+8
+>>> 1 + 4 * 5
+21
+>>> (1 + 4) * 5
+25
+>>> True
+True
+>>> False
+False
+>>> not True
+False
+>>> not False
+True
+>>> True and True
+True
+>>> True and False
+False
+>>> True + True
+2
+>>> True * 8
+8
+>>> False - 5
+-5
+>>> 0 == False
+True
+>>> 1 == True
+True
+>>> 2 == True
+False
+>>> -5 != False
+True
+>>> bool(0)
+False
+>>> bool(4)
+True
+>>> bool(-6)
+True
+>>> 0 and 2
+0
+>>> -5 or 0
+-5
+>>> 1 == 1
+True
+>>> 2 == 1
+False
+>>> 1 != 1
+False
+>>> 2 != 1
+True
+>>> 1 < 10
+True
+>>> 1 > 10
+False
+>>>
+>>> 1 < 2 and 2 < 3
+True
+>>> 2 < 3 and 3 < 2
+False
+>>> 1 < 2 < 3
+True
+>>> 2 < 3 < 2
+False
