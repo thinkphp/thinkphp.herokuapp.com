@@ -17,7 +17,7 @@ To qualify as an algorithm, the set of instructions should have some properties:
 - finiteness - the algorithm must finish in a finite amount of time.
 - correctness - the end result should be correct for all inputs.
 
-A program is a sequence of instructions that specifies how to perform a computation. The computation might be something mathematical, such as solving a system of equations or finding the rootof a polynomial, but it can also be a symbolic computation such as searching or replacing text in a document or something graphical, like processing an image or playing a video.
+A program is a sequence of instructions that specifies how to perform a computation. The computation might be something mathematical, such as solving a system of equations or finding the root of a polynomial, but it can also be a symbolic computation such as searching or replacing text in a document or something graphical, like processing an image or playing a video.
 
 The details look different in different languages, buta few instructions appear in just about every language:
 
@@ -118,7 +118,7 @@ A variable is a named area of the computer s memory and can be used to hold thin
 
 user_name  ------------> 'john'
 
-The variable user_name allows us to access this area of the momory easily and conveniently.
+The variable user_name allows us to access this area of the memory easily and conveniently.
 
 It is called a variable because the value it references in memory can vary during the lifetime a the program.
 
@@ -129,3 +129,28 @@ print("Hello, ", name)
 name = input("What is the name of your best friend? ")
 print("Hello best friend, ", name)
 ```
+
+In Python the variable name is not restricted to holding a string such as 'john' and 'Diaz'; it can also hold other types of data as numbers or the values True and False. For example:
+
+```python
+my_variable = 'John'
+print(my_variable)
+my_variable = 40
+print(my_variable)
+my_variable = True
+print(my_variable)
+my_variable = 1.4142
+print(my_variable)
+```
+
+As you can see my_variable first holds (or references the area of memory containing) the string 'John', it then holds the number 40, then holds the Boolean value True, and finally it holds the float-point number 1.14142.
+
+This is referred to in Python as Dynamic Typing. That is the type of the data held by the variable can Dynamically change as the program executes.
+
+One final aspect of the statement shown has yet to be considered:
+
+my_variable = input("Enter your name: ")
+
+What exactly is this '=' between the my_variable and the input() function?
+
+it's called the assignment operator. It's used to assign the value returned by the function input() to the variable my_variable. It's probably the most widely used operator in Python.
