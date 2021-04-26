@@ -4,9 +4,10 @@ disqus: n
 title: Glossary Python
 ---
 
-variable - a name that refers to a value.
-assignment - a statement that assign a value to a variable.
-state diagram - a graphical representation of a set of variables and the values they refer to.
+- variable : a name that refers to a value.
+- assignment : a statement that assign a value to a variable.
+- state diagram - a graphical representation of a set of variables and the values they refer to.
+
 keyword - a reserved word that is used to parse a program; you cannot use keywords like if, def and while as variable names.
 operand - one of the values on which an operator operates.
 expression - a combinations of variables, operators and values that represents a single result.
