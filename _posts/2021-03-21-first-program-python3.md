@@ -99,3 +99,33 @@ print("Hello, world!")
 user_name = input("Enter the name: ")
 print("Hello, ", user_name)
 ```
+
+Now after printing the original 'Hello world' string, the program has two additional statements.
+
+The result of running this program is:
+Hello, world!
+Enter your name: John
+Hello, John
+
+We look at each of new statement separately:
+user_name = input("Enter your name: ")
+
+This statement does several things. It first executes another function called input(). This function is passed a string - which is known as a argument - to use when it prompts the user for input.
+
+This function input() is a buit-in function that is part of the Python language. In this case it will display the string you provide as a prompt to the user and wait the user type something in followed by the return key. Whatever the user types in then returned as a result of executation the input() function. In this case that result is then stored in the VARIABLE user_name.
+
+A variable is a named area of the computer s memory and can be used to hold things (often referred to as data) such as strings, numbers, boolean as True/False. In this case the variable user_name is acting as a label for an area of memory which will hold the string entered by the user. The basic idea is illustrated in the following  diagram:
+
+user_name  ------------> 'john'
+
+The variable user_name allows us to access this area of the momory easily and conveniently.
+
+It is called a variable because the value it references in memory can vary during the lifetime a the program.
+
+```python
+print('Hello, world!')
+name = input("Enter the name: ")
+print("Hello, ", name)
+name = input("What is the name of your best friend? ")
+print("Hello best friend, ", name)
+```
