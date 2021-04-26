@@ -58,6 +58,7 @@ Python has the following data types built-in by default, in these categories:
 
 In Python, the data type is set when you assign a value to a variable:
 
+```python
 v = "Hello world"
 v = 9
 v = 1.414243
@@ -68,9 +69,11 @@ v = range(10)
 v = True
 v = False
 v = {"name":"john", "country": "USA"}
+```
 
 ### Setting the specific Data Type
 
+```python
 v = str("Hello world")
 v = int(20)
 v = float(1.42)
@@ -78,3 +81,4 @@ v = list(("tea","coffee","water"))
 v = tuple(["tea","coffee","water"])
 v = set(["tea","coffee","water"])
 v = dict(name="John", age=36)
+```
