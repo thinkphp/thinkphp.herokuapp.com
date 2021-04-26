@@ -16,6 +16,26 @@ Rules for Python variables:
 - variable Names are case-sensitive.
 - a variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, _)
 
+```python
+>>> 7a = 2
+  File "<stdin>", line 1
+    7a = 2
+     ^
+SyntaxError: invalid syntax
+>>> more@ = 3
+  File "<stdin>", line 1
+    more@ = 3
+          ^
+SyntaxError: invalid syntax
+
+>>> class = 2
+  File "<stdin>", line 1
+    class = 2
+          ^
+SyntaxError: invalid syntax
+```
+
+
 Example:
 ```python
 # a is of type int
