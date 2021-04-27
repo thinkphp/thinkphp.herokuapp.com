@@ -10,6 +10,8 @@ Python has no command for declaring a variable.
 
 A variable is created at the moment you first assign a value to it.
 
+## Variable Names
+
 Rules for Python variables:
 - a variable name must start with a letter or the underscore character
 - a variable name cannot start with a number
@@ -86,3 +88,61 @@ print(type(z))
 x = "world! "
 print("Hello, " + world)
 ```
+
+## Assignment Statements
+
+An assignment statement creates a new variable and gives it a value:
+
+```python
+>>> message = 'an assignment statement creates a new variable'
+>>> n = 29
+>>> pi = 3.14159265
+```
+
+This example makes three assignments. The first assigns
+a string to a variable named message; the second gives the integer 28 to n; the third assigns the approximate value of PI to pi.
+
+## Expressions and Statements
+
+An expression is a combination of values, variables and operators. A value all by itself is considered an expression, and so is a variable, so the following are all legal expressions:
+
+```python
+>>>47
+47
+>>> n = 17
+17
+>>>n + 25
+42
+```
+
+When you type an expression at the prompt, the interpreter evaluates it, which means that it finds the value of the expression, n has the value 17 and n + 25 has the value 42.
+
+A statement is a unit of code that has an effect, like creating a variable or displaying a value.
+
+```python
+>>>n = 17
+>>>print(n)
+```
+
+The first line is an assignment statement that gives a value to n. The second line is a print statement that displays the value of n.
+
+## Order of operations
+
+When an expression contains more than one operator, the order of evaluation depends on the order of operations. For mathematical operators, Python follows mathematical conventions.
+
+- parantheses have the highest precedence and can be used to force an expression to evaluate in the order you want. (1 + 1) ** (2 + 2)
+- exponentation has the highest precedence, so 1 + 2 ** 3 + 3
+- multiplications and division have highest precedence than Addition and Substraction. 2 * 5 + 1 = 11
+
+## String operations.
+
+The operator '+' performs string concatenation, which means it joins the strings by linking them end-to-end.
+
+```python
+>>> a = "hello, "
+>>> b = "World!"
+>>>a + b
+>>> "Hello, world!"
+```
+
+The operator "*" also works on string; it performs repetition. For example "Spam" * r is SpamSpamSpam
