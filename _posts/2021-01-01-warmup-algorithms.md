@@ -20,6 +20,20 @@ def factorial( n ):
 >>> factorial(5)
 >>>120    
 
+# tail recursion
+def factorial2( n , a ):
+
+    if n == 1:
+
+       return a
+
+    else:
+      
+      return factorial2(n - 1, a * n)     
+
+>>>n = 5
+>>>factorial2(n,1)
+>>>120
 ```  
 
 
