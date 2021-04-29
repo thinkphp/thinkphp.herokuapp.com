@@ -7,9 +7,9 @@ title: Operator Overloading Python
 ## Introduction
 
  We'll explore Operator Overloading:
-    - what it is
-    - how it works
-    - why we want it
+- what it is
+- how it works
+- why we want it
 
 Operator overloading allows user defined class to appear
 to have a natural way of using operators such as: +,-,*,/,<,>,=
