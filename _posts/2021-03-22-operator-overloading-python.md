@@ -4,12 +4,14 @@ disqus: n
 title: Operator Overloading Python
 ---
 
+## Introduction
+
  We'll explore Operator Overloading:
     - what it is
     - how it works
     - why we want it
 
-Operatorul overloading allows user defined class to appear
+Operator overloading allows user defined class to appear
 to have a natural way of using operators such as: +,-,*,/,<,>,=
 as well as logical operators such as & |
 This leads to more succint and readable code as it is possible to
@@ -18,6 +20,12 @@ write code such as:
 -   q2 = Quantity(2)
 -   q3 = q1 + q2
 
+It feels  more natural for both developers and those reading the code. The alternative would be to create methods such as add and write code such as:
+- q1 = Quantity(1)
+- q2 = Quantity(2)
+- q3 = q1.add(q2)
+
+## Implementing Operator Overloading
 
 ```python
 class Quantity:
