@@ -60,8 +60,8 @@ def factorial4( first, last ):
 >>>120    
 ```
 
-## Second example:
+## Second example: Fibonacci
 
-## Third example:
+## Third example: Euclid
 
-## Fourth example:
+## Fourth example: Permutation
