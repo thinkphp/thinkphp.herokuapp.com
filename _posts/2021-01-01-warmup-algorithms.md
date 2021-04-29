@@ -33,7 +33,8 @@ def factorial2( n , a ):
 >>>n = 5
 >>>factorial2(n,1)
 >>>120
-```  
+```
+
 ```python
 
 # recursion
@@ -57,7 +58,7 @@ def factorial4( first, last ):
 
 >>> factorial4(1, 5)
 >>>120    
-
+```
 
 ## Second example:
 
