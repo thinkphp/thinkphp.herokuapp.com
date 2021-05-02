@@ -63,4 +63,42 @@ This is a shorthand for saying that what is held in my_variable is currently a c
 
 ## What can you do with Strings?
 
+In Python terms this means operations of functions are their available or built-in that you can use to work strings. The answer is that there are very many. Some of these are described in this section.
+
+- String concatenation
+
+You can concatenate two strings together with + operator (an operator is an operation or behaviour that can be applied to the types involved). That is you can takeone string and addit to another string to create a new third string:
+
+```python
+string_1 = 'Good'
+string_2 = " day"
+string_3 = string_1 + string_2  
+print(string_3)
+print("Hello" + " world!")
+```
+The output from this is:
+Good day
+Hello world!
+
+Notice that the way in which the string is defined does not matter here, string_1 used single quotes but string_2 used double quotes; however they are both just strings.
+
+- Length of the string
+
+It can be sometimes useful to know how long a string is, for example if you are putting a string into a user interface you might need to know how much of the string
+will be displayed within the field. To find out the length of the string you use len() function, for example:
+
+print(len(string_3))
+
+This will print out the length of the string currently being held by the variable string_3(in terms of the number of characters contained in the string).
+
+- Accesing a Character
+
+As a string is fixed sequance of characters, it is possible to use square brackets and an index  (or position) to retrieve a specific character from within a string. For example:
+
+my_string = 'Hello'
+print(len(my_string[4]))
+
+However, you should note that strings are indexed from ZERO! This means that the first character is in position 0, the second in position 1 etc. Thus stating [4] indicates that we want to obtain the fifth character in string, which in this case is the letter 'o'. This for of
+indexing elements is actually quite common in programming languages and is referred to a zero based indexing.
+
 ## Hints on Strings
