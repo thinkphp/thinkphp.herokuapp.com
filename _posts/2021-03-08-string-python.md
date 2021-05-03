@@ -95,8 +95,12 @@ This will print out the length of the string currently being held by the variabl
 
 As a string is fixed sequance of characters, it is possible to use square brackets and an index  (or position) to retrieve a specific character from within a string. For example:
 
+```python
 my_string = 'Hello'
 print(len(my_string[4]))
+my_string2 = "world"
+print(len(my_string2))
+```
 
 However, you should note that strings are indexed from ZERO! This means that the first character is in position 0, the second in position 1 etc. Thus stating [4] indicates that we want to obtain the fifth character in string, which in this case is the letter 'o'. This for of
 indexing elements is actually quite common in programming languages and is referred to a zero based indexing.
