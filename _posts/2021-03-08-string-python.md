@@ -105,4 +105,41 @@ print(len(my_string2))
 However, you should note that strings are indexed from ZERO! This means that the first character is in position 0, the second in position 1 etc. Thus stating [4] indicates that we want to obtain the fifth character in string, which in this case is the letter 'o'. This for of
 indexing elements is actually quite common in programming languages and is referred to a zero based indexing.
 
+- Accesing a subset of Characters
+
+It is also possible to obtain a subset of the original string, often reffered to as a substring (of the original string). This can be done using the square brackets notation but
+using a ":" to indicate the start end points of the sub string. If one of the positions is omitted then the start or end of the string is assumed (depending upon the omission), for example:
+
+```python
+my_string = "Welcome to the jungle!"
+print(my_string[4]) #character at position 4
+print(my_string[1:5]) #from position 1 to 5
+print(my_string[:5]) #from start to 5
+print(my_string[2:]) #from position 2 to the end
+```
+will generate:
+o
+elco
+welco
+lcome to the jungle!
+
+As such my_string[1:5] return the substring containing the 2nd to 6th letters.
+In turn my_string[:5] returned the substring containing the 1st to 6th letters
+and my_string[2:] the substring containing 3rd to the last letters.
+
+- Repeating Strings.
+
+We can also use '*' operator with strings. In the case of strings this means repeat the given string a certain number of times. This generates a new string containing the original string repeated n number of times. For example:
+
+```python
+print("*" * 10)
+print("Hello" * 10)
+```
+
+will generate:
+
+**********
+HelloHelloHelloHelloHelloHelloHelloHelloHelloHello
+
+
 ## Hints on Strings
