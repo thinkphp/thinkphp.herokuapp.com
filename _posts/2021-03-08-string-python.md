@@ -142,4 +142,54 @@ will generate:
 HelloHelloHelloHelloHelloHelloHelloHelloHelloHello
 
 
+- Splitting strings
+
+A very common requirement is the need to split a string up into multiple separate
+strings based on a specific character such a space or a comma.
+
+This can be done with the split() function, that takes a string to used in
+identifying how to split up the receiving string. For example:
+
+```python
+title = "Hello, world, George"
+print('Source string: ', title)
+print('Split using a space')
+print(title.split(' '))
+print('Split using a comma')
+print(title.split(','))
+```
+
+This produces as output:
+Source string: Hello, world, George
+Split using a space
+['Hello,','world,', 'George']
+Split using a comma
+['Hello',' world', 'George']
+
+As you be seen from this the result generated is either a list of each word
+in string or three strings as defined by the comma.
+
+- Counting strings.
+
+It is possible to find out how many time a string is repeated in another string.
+This is done using the count() function for example:
+
+```python
+my_string = 'Count, the numberof spaces'
+print("my_string.count(' '):", my_string.count(' '))
+```
+
+which has the output:
+my_string.count(' '): 8
+indicating that there are 8 spaces in the original string.
+
+- Replacing strings:
+
+- Finding substrings:
+
+- Converting other types intro Strings:
+
+- Comparing strings
+
+- Other String Operations
 ## Hints on Strings
