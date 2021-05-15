@@ -95,10 +95,101 @@ This will print out the length of the string currently being held by the variabl
 
 As a string is fixed sequance of characters, it is possible to use square brackets and an index  (or position) to retrieve a specific character from within a string. For example:
 
+```python
 my_string = 'Hello'
 print(len(my_string[4]))
+my_string2 = "world"
+print(len(my_string2))
+```
 
 However, you should note that strings are indexed from ZERO! This means that the first character is in position 0, the second in position 1 etc. Thus stating [4] indicates that we want to obtain the fifth character in string, which in this case is the letter 'o'. This for of
 indexing elements is actually quite common in programming languages and is referred to a zero based indexing.
 
+- Accesing a subset of Characters
+
+It is also possible to obtain a subset of the original string, often reffered to as a substring (of the original string). This can be done using the square brackets notation but
+using a ":" to indicate the start end points of the sub string. If one of the positions is omitted then the start or end of the string is assumed (depending upon the omission), for example:
+
+```python
+my_string = "Welcome to the jungle!"
+print(my_string[4]) #character at position 4
+print(my_string[1:5]) #from position 1 to 5
+print(my_string[:5]) #from start to 5
+print(my_string[2:]) #from position 2 to the end
+```
+will generate:
+o
+elco
+welco
+lcome to the jungle!
+
+As such my_string[1:5] return the substring containing the 2nd to 6th letters.
+In turn my_string[:5] returned the substring containing the 1st to 6th letters
+and my_string[2:] the substring containing 3rd to the last letters.
+
+- Repeating Strings.
+
+We can also use '*' operator with strings. In the case of strings this means repeat the given string a certain number of times. This generates a new string containing the original string repeated n number of times. For example:
+
+```python
+print("*" * 10)
+print("Hello" * 10)
+```
+
+will generate:
+
+**********
+HelloHelloHelloHelloHelloHelloHelloHelloHelloHello
+
+
+- Splitting strings
+
+A very common requirement is the need to split a string up into multiple separate
+strings based on a specific character such a space or a comma.
+
+This can be done with the split() function, that takes a string to used in
+identifying how to split up the receiving string. For example:
+
+```python
+title = "Hello, world, George"
+print('Source string: ', title)
+print('Split using a space')
+print(title.split(' '))
+print('Split using a comma')
+print(title.split(','))
+```
+
+This produces as output:
+Source string: Hello, world, George
+Split using a space
+['Hello,','world,', 'George']
+Split using a comma
+['Hello',' world', 'George']
+
+As you be seen from this the result generated is either a list of each word
+in string or three strings as defined by the comma.
+
+- Counting strings.
+
+It is possible to find out how many time a string is repeated in another string.
+This is done using the count() function for example:
+
+```python
+my_string = 'Count, the numberof spaces'
+print("my_string.count(' '):", my_string.count(' '))
+```
+
+which has the output:
+my_string.count(' '): 8
+indicating that there are 8 spaces in the original string.
+
+- Replacing strings:
+
+- Finding substrings:
+
+- Converting other types intro Strings:
+
+- Comparing strings
+
+- Other String Operations
 ## Hints on Strings
