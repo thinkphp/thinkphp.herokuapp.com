@@ -206,11 +206,124 @@ pushing 'Madonna' and 'Cher' up one in the index within the List.
 
 ### List concatenation
 
+It is possible to cancatenate two lists together using the concatenation operator
+'+':
+
+```
+list1 = [3, 2, 1]
+list2 = [6, 5, 4]
+list3 = list1 + list2
+print(list3)
+#generates
+[3, 2, 1, 6, 5, 4]
+```
+
 ### Remove from a list
+
+We can remove an element from a List using the remove() method. The syntax for this
+method is:
+
+<list>.remove(<object>)
+
+This will remove the object from the list; if the object is not in the list, then
+will generated an error by Python.
+
+
+```
+another_list = ['Gary', 'Mark', 'Robbie', 'Jason', 'Howard']
+print(another_list)
+another_list.remove('Robbie')
+print(another_list)
+#The output from this is:
+['Gary', 'Mark', 'Robbie', 'Jason', 'Howard']
+['Gary', 'Mark', 'Jason', 'Howard']
+```
 
 ### The pop() Method
 
+The syntax of the pop() method is:
+
+a.pop(index=-1)
+
+It removes an element from the List; however, it differs from the remove()
+method in two ways:
+- it takes an index which is the index of the item to remove from the list rather
+than the object itself.
+- the method returns the item that was removed as its result.
+
+An example of using pop() method is given below:
+
+```
+list6 = ['Once', 'Upon', 'a', 'Time']
+print(list6)
+print(list6.pop(2))
+print(list6)
+```
+
+will generate:
+
+- ['Once', 'Upon', 'a', 'Time']
+- a
+- ['Once', 'Upon', 'Time']
+
+an overload of this method is just:
+
+<list>.pop()
+
+Which removes the last item in the list. For example:
+
+```
+list6 = ['Once', 'Upon', 'a', 'Time']
+print(list6)
+print(list6.pop())
+print(list6)
+```
+
+with the output:
+
+```
+['Once', 'Upon', 'a', 'Time']
+Time
+['Once', 'Upon', 'a']
+```
+
 ### Deleting from  list
+
+It is possible to use the del keyword to delete elements from a list.
+
+The del keyword can be used to delete a single element or a slice from a list.
+
+To delete an individual element from a list use del and access the element via
+its index:
+
+```
+my_list = ['A', 'B', 'C', 'D', 'E']
+print(my_list)
+del my_list[2]
+print(my_list)
+```
+
+which outputs:
+
+- ['A', 'B', 'C', 'D', 'E']
+- ['A', 'B', 'D', 'E']
+
+To delete a slice from within a list use the del keyword and the slice returned
+from the list.
+
+```
+my_list = ['A', 'B', 'C', 'D', 'E']
+print(my_list)
+del my_list[1:3]
+print(my_list)
+
+```
+
+which deletes the slice from index 1 up to index 3 (not including)
+
+['A', 'B', 'C', 'D', 'E']
+['A','D','E']
+
 
 
 ### List Methods
