@@ -141,7 +141,68 @@ list[1:]: ['Paul', 'George', 'Ringo']
 
 ### Adding to a list
 
+You can add an item to a list using the append() method of the List class(this
+changes the actual list; it does not create a copy of the list). The syntax of the
+method is:
+<alist>.append(<object>)
+
+As an example, consider the following list of strings, to which we append a fifth
+string:
+
+```
+list1 = ['John', 'Paul', 'George', 'Ringo']
+list1.append('Pete')
+print(list1)
+this will generate the output:
+['John', 'Paul', 'George', 'Ringo', 'Pete']
+```
+
+You can also add all the items in a list to another list. There are several options
+here, we can use the extend() method that will add the items passed to it to the
+end of the list or we can use += operator which does the same thing:
+
+```
+list1 = ['John', 'Paul', 'George', 'Ringo', 'Pete']
+print(list1)
+list1.extend(['Albert', 'Bob'])
+print(list1)
+list1 += ['Ginger', 'Sporty']
+print(list1)
+The output from this code snippet is:
+['John', 'Paul', 'George', 'Ringo', 'Pete']
+['John', 'Paul', 'George', 'Ringo', 'Pete', 'Albert', 'Bob']
+['John', 'Paul', 'George', 'Ringo', 'Pete', 'Albert', 'Bob',
+'Ginger', 'Sporty']
+```
+
+Which approach you prefer to use is up to you.
+Note that strictly speaking both extend() and += take an iterable.
+
 ### Inserting into a list1
+
+You can also insert elements into an existing list. This is done using the insert()
+method of the List class. The syntax of this method is:
+
+<list>.insert(<index>, <object>)
+
+The insert() method takes an index indicating where to insert the element and an object to be
+inserted.
+
+For example, we can insert the string 'paloma' in between the Zeroth and oneth item
+in the following list of names:
+
+```
+a_list = ['Adele', 'Madonna', 'Cher']
+print(a_list)
+a_list.insert(1, 'Paloma')
+print(a_list)
+#The result is:
+['Adele', 'Madonna', 'Cher']
+['Adele', 'Paloma', 'Madonna', 'Cher']
+```
+
+In other words, we have inserted the string 'Paloma' into the index position 1
+pushing 'Madonna' and 'Cher' up one in the index within the List.
 
 ### List concatenation
 
