@@ -186,7 +186,9 @@ Note that strictly speaking both extend() and += take an iterable.
 You can also insert elements into an existing list. This is done using the insert()
 method of the List class. The syntax of this method is:
 
+```
 <list>.insert(<index>, <object>)
+```
 
 The insert() method takes an index indicating where to insert the element and an object to be
 inserted.
@@ -226,7 +228,9 @@ print(list3)
 We can remove an element from a List using the remove() method. The syntax for this
 method is:
 
+```
 <list>.remove(<object>)
+```
 
 This will remove the object from the list; if the object is not in the list, then
 will generated an error by Python.
