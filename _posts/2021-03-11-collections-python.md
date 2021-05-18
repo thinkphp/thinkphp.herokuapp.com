@@ -52,14 +52,49 @@ John   Paul  George   Ringo
 As with Tuples we can have nested lists and lists containing different types
 of elements. We can create the following structure of nested Lists:
 
-John    [1,3.14,'Person',True],   ['orange','apple',20] Ringo
-0       1                         2                     3
+- John    [1,3.14,'Person',True],   ['orange','apple',20] Ringo
+- 0       1                         2                     3
 
 In code this can be defined as:
 
+```
 l1 = [1,3.14,'Person',True]
 l2 = ['orange','apple',20]
 root_list = ['John',l1, l2, 'Ringo']
+```
 
 When the root_list is printed, we get:
 ['John',[1,3.14,'Person',True], ['orange','apple',20], 'Ringo']
+
+Note the square brackets inside the outer square brackets indicating nested lists.
+We can of course also nest Tuples in lists and lists in Tuples. For example, they
+following structures shows Tuples (the ovals) hold references to Lists(rectangles)
+and vice versa:
+
+```
+t1 = (1, 'John',3.14)
+l1 = ['John','Diaz']
+l2 = [t1, l1]
+t2 = (l2, 'apple')
+print(t2)
+```
+which produces:
+- ([(1, 'John', 34.5), ['Smith', 'Jones']], 'apple')
+
+### List Constructor Function
+
+The List() function can be used to construct a list from an iterable; This
+means that it can construct a list from a Tuple, a Dictionary or a Set. It can
+also construct a list from anything that implements the iterable protocol.
+The signature of the list() function is:
+
+- list(iterable)
+
+
+For example:
+
+- vowelTuple = ('a','e','i','o','u')
+- print(list(vowelTuple))
+
+which produces:
+- ['a','e','i','o','u']
