@@ -144,12 +144,13 @@ list[1:]: ['Paul', 'George', 'Ringo']
 You can add an item to a list using the append() method of the List class(this
 changes the actual list; it does not create a copy of the list). The syntax of the
 method is:
+
 <alist>.append(<object>)
 
-As an example, consider the following list of strings, to which we append a fifth
+As an example, con  sider the following list of strings, to which we append a fifth
 string:
 
-```
+```python
 list1 = ['John', 'Paul', 'George', 'Ringo']
 list1.append('Pete')
 print(list1)
@@ -161,7 +162,7 @@ You can also add all the items in a list to another list. There are several opti
 here, we can use the extend() method that will add the items passed to it to the
 end of the list or we can use += operator which does the same thing:
 
-```
+```python
 list1 = ['John', 'Paul', 'George', 'Ringo', 'Pete']
 print(list1)
 list1.extend(['Albert', 'Bob'])
