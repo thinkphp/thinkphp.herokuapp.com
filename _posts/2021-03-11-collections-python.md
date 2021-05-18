@@ -28,4 +28,38 @@ is data types for holding collections of other objects, these are:
 - Sets
 - Dictionary
 
-## Lists
+# Lists
+
+Lists are mutable ordered containers of other objects. They support all the features
+of the Tuples but they are mutable it is also possible to add elements to a List,
+remove elements and modify elements. The element in the list maintain their order
+(until modified).
+
+## Creating lists
+
+Lists are created using square brackets positined around the elements that make up
+the list. For example:
+
+list1 = ['John','Paul','George','Ringo']
+
+In this case we have created a list of four elements with the first element
+being indexed from ZERO, we thus have:
+
+John   Paul  George   Ringo
+0      1     2        3
+
+
+As with Tuples we can have nested lists and lists containing different types
+of elements. We can create the following structure of nested Lists:
+
+John    [1,3.14,'Person',True],   ['orange','apple',20] Ringo
+0       1                         2                     3
+
+In code this can be defined as:
+
+l1 = [1,3.14,'Person',True]
+l2 = ['orange','apple',20]
+root_list = ['John',l1, l2, 'Ringo']
+
+When the root_list is printed, we get:
+['John',[1,3.14,'Person',True], ['orange','apple',20], 'Ringo']
