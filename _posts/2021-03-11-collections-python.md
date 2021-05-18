@@ -275,7 +275,9 @@ will generate:
 
 an overload of this method is just:
 
+```
 <list>.pop()
+```
 
 Which removes the last item in the list. For example:
 
