@@ -98,3 +98,70 @@ For example:
 
 which produces:
 - ['a','e','i','o','u']
+
+### Accessing Elements from a List
+
+You can access elements from a list using an index (within square brackets).
+The index returns the object at that position, for example:
+
+list1 = ['John','Paul','George','Ringo']
+print(list1[1])
+
+This will print out the element at index 1 which is Paul (lists are indexed from
+ZERO si the first element is the zeroth element).
+
+If you use a negative index such as -1 then the index is reversed so an index
+of -1 starts from the end of the list (-1 returns the last element, -2 the second
+to last, etc).
+
+It is possible to extract a slice (or a sublist) from a list. This is done
+by providing a starting and end end index to within the square brackets separated
+by a colon. For example [1:4] indicates a slice starting at oneth element and
+extending up to (but not including) the fourth element. If either of the indexes
+is missed for a slice then that indicates the start or end of the list respective.
+
+The following illustrates some of these ideas:
+
+```
+list1 = ['John','Paul','George','Ringo']
+print('list1[1]:', list1[1])
+print('list1[-1]:', list1[-1])
+print('list1[1:3]:', list1[1:3])
+print('list[:3]:', list1[:3])
+print('list[1:]:', list1[1:])
+
+#which produces:
+
+list1[1]: Paul
+list1[-1]: Ringo
+list1[1:3]: ['Paul', 'George']
+list[:3]: ['John', 'Paul', 'George']
+list[1:]: ['Paul', 'George', 'Ringo']
+```
+
+### Adding to a list
+
+### Inserting into a list1
+
+### List concatenation
+
+### Remove from a list
+
+### The pop() Method
+
+### Deleting from  list
+
+
+### List Methods
+
+- append() adds an element at the end of the list.
+- clear() removes all the elements from the list
+- copy() returns a copy of the list
+- count() returns the number of elements with specified value
+- extend() adds the elements of the list, to the end of the current list
+- index() returns the index of the first element with the specified value
+- insert() adds an element at the specified position
+- pop() removes an item at the specified position
+- remove() removes an item with a specified value
+- reverse() reverses the order of the list
+- sort() sorts the list
