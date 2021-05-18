@@ -145,7 +145,9 @@ You can add an item to a list using the append() method of the List class(this
 changes the actual list; it does not create a copy of the list). The syntax of the
 method is:
 
+```
 <alist>.append(<object>)
+```
 
 As an example, con  sider the following list of strings, to which we append a fifth
 string:
