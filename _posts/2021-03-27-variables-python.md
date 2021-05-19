@@ -146,3 +146,14 @@ The operator '+' performs string concatenation, which means it joins the strings
 ```
 
 The operator "*" also works on string; it performs repetition. For example "Spam" * r is SpamSpamSpam
+
+## Scope and Lifetime of variables
+
+We have already defined several variables in the examples we have being working with this lectures. In practice, most of these variables have been
+what are known as global variables. That is there are accessible anywhere in our programs. In this chapter we will look at local variables as defined within a function, at global variables and how they can be refereced within a function and finally we will consider nonlocal variables.
+
+- Local variables.
+
+- The global keyword.
+
+- Nonlocal variables.
