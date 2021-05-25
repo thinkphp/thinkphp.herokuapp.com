@@ -356,3 +356,30 @@ Tuples are an immutable ordered collection of objects; that is each element in a
 specific position (its index) and that position does not change over time. Indeed, it is Not
 possible to add or remove from the tuple once it
 has been created.
+
+## Creating tuples
+
+Tuples are defined using parentheses around
+the elements that makeup the tuple, for example:
+* tup1 = (1,2,3,4,7)
+This defined a new Tuple which is referenced by
+the variable tup1. The tuple contain exactly 5
+elements (in this case integers) with the first
+element in the tuple having the index 0 and the
+last element in the tuple (the integer 7) having the index 4. This is illustrates below:
+1 2 3 4 7
+0 1 2 3 4
+
+## The tuple() Constructor function
+
+The tuple() function can be used to create a new
+tuple from an iterable. An iterable is something
+that implements the iterable protocol. This means
+that a new tuple can be created from a Set, a List, A dictionary (as these are all iterable types), or any type that implements the iterable
+protocol. The syntax of the tuple() function is:
+tuple(iterable)
+
+list1 = [1,2,3,4]
+tuple1 = tuple(list1)
+print(tuple1)
+that generates the output: (1,2,3,4)
