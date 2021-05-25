@@ -348,3 +348,11 @@ which deletes the slice from index 1 up to index 3 (not including)
 - remove() removes an item with a specified value
 - reverse() reverses the order of the list
 - sort() sorts the list
+
+# Tuples
+
+Tuples, along with Lists, are probably one of Python most used container types. They will present in almost any non-trivial Python program.
+Tuples are an immutable ordered collection of objects; that is each element in a tuple has a
+specific position (its index) and that position does not change over time. Indeed, it is Not
+possible to add or remove from the tuple once it
+has been created.
