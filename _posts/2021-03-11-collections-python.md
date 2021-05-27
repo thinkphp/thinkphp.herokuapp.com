@@ -383,3 +383,64 @@ list1 = [1,2,3,4]
 tuple1 = tuple(list1)
 print(tuple1)
 that generates the output: (1,2,3,4)
+
+## Accessing Elements of a Tuple
+
+The elements of a tuple can be accessed using
+an index in square brackets. The index returns
+the object of that position, for example:
+
+
+```
+tup1 = (1, 3, 5, 7)
+print('tup1[0]:\t',tup1[0])
+print('tup1[1]:\t',tup1[1])
+print('tup1[2]:\t',tup1[2])
+print('tup1[3]:\t',tup1[3])
+```
+
+## Creating New Tuples from Existing Tuples.
+
+It is also possible to return whatis known
+as a slice from a Tuple. This is a new Tuple
+which is comprised of subset of the original Tuple. This is done by providing the start and
+end indexes for the slice, separated by a colon,
+within the index square brackets. For example:
+* print("tup1[1:3]:\t", tup1[1:3])
+
+Which returns a new Tuple of two elements containing the elements from index 1 up to
+element 3 but not including. Note that the original Tuple is not affected in any way
+(remember its immutable so cannot be modified).
+The output of above is thus:
+tup1[1:3]: (3,5)
+There are in fact numerous variations of the use
+of the slicing indices. For example, if the first index is omitted it indicates that the slice should start from the beginning of the
+tuple, while omitting the last index indicates
+it should go to the end of the Tuple.
+
+```
+print('tup1[:3]:\t', tup1[:3])
+print('tup1[1:]:\t', tup1[1:])
+```
+
+which generates:
+
+```
+tup1[:3]:
+tup1[1:]:
+(1, 3, 5)
+(3, 5, 7)
+```
+
+You can reverse a Tuple using the ::-1 notation
+again this returns a new Tuple and has no effect on the original Tuple:
+```
+print('tup1[::-1]:\t', tup1[::-1])
+```
+
+this thus produces:
+
+```
+tup1[::-1]:
+(7, 5, 3, 1)
+```
