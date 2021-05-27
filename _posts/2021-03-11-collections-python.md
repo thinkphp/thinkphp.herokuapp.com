@@ -444,3 +444,94 @@ this thus produces:
 tup1[::-1]:
 (7, 5, 3, 1)
 ```
+
+## Tuples can hold different Types
+
+## Iterating over Tuples
+
+## Tuple related Functions
+
+## Check if an element exists
+
+## Nested Tuples
+
+## Things you can't do with Tuples
+
+Its not possible to add and remove Elements
+from a Tuple; they are immutable. It should
+be particulary noted that none of the functions
+or methods presented above actual change the
+original tuple they are applied to; even those
+that return a subset of the original Tuple actually return a new instance of the class Tuple
+and have no effect on the original Tuple.
+
+# Sets
+
+## Introduction
+
+A set Type is an unordered (unindexed) collection of immutable object that does not
+allow duplicates.
+
+## Creating a Set
+
+A set is defined using curly brackets ('{}')
+
+For example:
+```
+basket = {'apple','orange','apple', 'pear', 'orange','banana'}
+print(basket)
+{'banana', 'orange', 'pear', 'apple'}
+```
+
+When you run this code will show that apple
+is only added once to the set. Note that
+because the Set is unordered it is notpossible
+to refer to elements of the set using an index.
+
+## The set constructor function
+
+
+
+
+# Dictionaries
+
+## Introduction
+
+A dictionary is a set of associations between
+key and a value that is unordered, changable (mutable) and indexed. Pictorially we might view
+a Dictionary as shown below for a set of countries and thei capital cities. Note that
+in a Dictionary the key must be unique but the
+values do not need to be unique.
+
+```
+key         values
+Wales       Cardiff
+England     London
+Scotland    Edinburgh
+Irland      Dublin
+```
+
+## Creating a Dictionary
+A dictionary is created using curly brackets ('{}') where each entry in the dictionaryis a
+key:value pair.
+
+```
+cities = {'Wales': 'Cardiff',
+'England': 'London',
+'Scotland': 'Edinburgh',
+'Northern Ireland': 'Belfast',
+'Ireland': 'Dublin'}
+print(cities)
+```
+
+This creates a dictionary referenced by
+the variable cities which holds a set of
+key:value pairs for the capital cities of the UK
+and Ireland. When this code is run we see:
+```
+{'Wales': 'Cardiff', 'England': 'London', 'Scotland':
+'Edinburgh', 'Northern Ireland': 'Belfast', 'Ireland':
+'Dublin'}
+```
+
+## The dict() Constructor function.
