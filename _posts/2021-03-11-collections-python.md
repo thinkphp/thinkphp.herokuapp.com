@@ -490,6 +490,103 @@ to refer to elements of the set using an index.
 
 ## The set constructor function
 
+## Accessing Elements in a Set
+
+Unlike lists it is not possible to access
+elements from a Set via an index; this is
+because they are unordered containers and thus
+there are no indexes available. However, They
+are iterable containers.
+
+Elements of a Set can be iterated over using
+the For statement:
+
+```
+for item in basket:
+    print(item)
+```
+This applies the print function to each item
+in the listin turn.
+
+
+## Working with Sets
+
+* Checking for Presence of an Element
+
+You can check for the presence of an element
+in a set using the in keyword, for example:
+
+```
+print('apple' in basket)
+```
+
+This will print True if `apple` is a member of
+the set basket.
+
+* Adding items to a Set
+
+It is possible to add items to a set using
+add() method:
+
+```
+basket = {'apple','orange','banana'}
+basket.add('apricot')
+print(basket)
+# this generates: {'orange', 'apple', 'banana', 'apricot', 'pear'}
+```
+
+If you want to add more than one item to a Set
+you canuse the update() method:
+
+```
+basket = {'apple', 'orange', 'banana'}
+basket.update(['apricot', 'mango', 'grapefruit'])
+print(basket)
+# generating:
+# {'orange', 'apple', 'mango', 'banana', 'apricot', 'grapefruit'}
+```
+
+The argument to update can be a set, a list, a tuple or a dictionary. The method automatically
+converts the paramenter into a set if it is not
+already and then adds the value to the original set.
+
+* Changing Items in a Set
+It is not possible to change items already in a Set.
+
+* Obtaining the Length of a set.
+
+As with other collection/container classes;
+you can find out the length of a set using the
+len() function.
+
+```
+basket = {'apple', 'orange', 'apple', 'pear', 'orange',
+'banana'}
+print(len(basket)) # generates 4
+```
+
+* Obtaining the MAx and Min values in a set.
+
+You can also obtain the maximum or minimum values
+in a set using the max() or min() functions.
+```
+print(max(a_set))
+print(min(a_set))
+```
+
+* Removing an Item
+
+To remove an item from a Set, use the remove()
+or discard() functions.
+
+
+* Set operations:
+
+The Set container also supports set like
+operations such as Union (|), intersection (&),
+difference(-) and symmetric difference(^).
+These are based on simple Set Theory.
+
 
 
 
