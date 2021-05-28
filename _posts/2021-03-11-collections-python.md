@@ -490,6 +490,18 @@ to refer to elements of the set using an index.
 
 ## The set constructor function
 
+AS with tuples  and lists Python provides a predefined function that can convert any iterable type into a Set. The function signature is:
+set(iterable)
+
+Given an iterable object, this function returns a new Set based on the values obtained from the iterable. This means that a Set can be easily created from a List, Tuple or a Dictionary, as well as any other data type that implements the iterable protocol. For example, the following code snippet converts a Tuple into a Set.
+
+```
+set1 = set((1,2,3))
+print(set1)
+# which print out:
+# {1,2,3}
+```
+
 ## Accessing Elements in a Set
 
 Unlike lists it is not possible to access
@@ -577,9 +589,76 @@ print(min(a_set))
 * Removing an Item
 
 To remove an item from a Set, use the remove()
-or discard() functions.
+or discard() functions. The remove() function
+removes a single item from a Set but generetes
+an error if that item was not initialling the set. The remove function also removes a single item from a set but does not throw an error
+if it was not initially present in the set.
+
+```
+basket = {'apple', 'orange', 'apple', 'pear', 'orange',
+'banana'}
+print(basket)
+basket.remove('apple')
+basket.discard('apricot')
+print(basket)
+```
+
+This generetes:
+
+```
+{'pear', 'banana', 'orange', 'apple'}
+{'pear', 'banana', 'orange'}
+```
+
+It is also a method pop() that can be used to remove an item (and return that item as a result of running the method); however it removes the last item in the set(although as a set is unordered you will not know which item that will be).
+
+The method clear() is used to remove all elements from a Set.
+
+```
+basket = {'apple', 'orange', 'banana'}
+basket.clear()
+print(basket)
+```
+
+will print out: set() which is used to represent an empty set.
 
 
+* Nesting Sets
+
+It is possible to hold any immutable object within a set. This means that a set can contain  reference to a Tuple (as that is immutable). We can thus write:
+```
+s1 = {(1,2,3)}
+print(s1)
+```
+
+This prints out:
+```
+{(1,2,3)}
+```
+
+However we cannot nest List or other sets within
+a Set as these are not immutables types. The following would both generate a runtime error in Python:
+```
+# Can't have the following
+s2 = { {1, 2, 3} }
+print(s2)
+s3 = { [1, 2, 3] }
+print(s3)
+```
+
+However we can use Frozenset and nest these within sets. A Frozenset is exactly like a Set except that it is immutable(it cannot be modified) and thus it can be nested within a Set. For example:
+
+```
+# Need to convert sets and lists into frozensets
+s2 = { frozenset ({1, 2, 3}) }
+print(s2)
+s3 = { frozenset ([1, 2, 3]) }
+print(s3)
+
+#this generates
+{frozenset({1, 2, 3})}
+{frozenset({1, 2, 3})}
+```
 * Set operations:
 
 The Set container also supports set like
@@ -587,8 +666,50 @@ operations such as Union (|), intersection (&),
 difference(-) and symmetric difference(^).
 These are based on simple Set Theory.
 
+Given the two sets:
 
+1) The Union of two sets represents the combination
+of all the values in the two sets:
 
+```
+s1 = {'apple', 'orange', 'banana'}
+s2 = {'grapefruit', 'lime', 'banana'}
+
+#this would print out:
+# print('Union:', s1 | s2)
+Union: {'apple', 'lime', 'banana', 'grapefruit', 'orange'}
+```
+
+2) The intersection of two sets represents the common values between two sets:
+
+```
+print('Intersection:', s1 & s2)
+# this generates
+#Intersection: {'banana'}
+```
+
+3) The difference between two sets is the set of values in the first set that are not in the second set:
+
+```
+print('Difference:', s1 - s2)
+# Which produces the output:
+# Difference: {'apple', 'orange'}
+```
+
+4) The Symmetric Difference represents all the unique values in the two sets (that is the inverse of the interesection)
+
+```
+print('Symmetric Difference:', s1 ^ s2)
+#symmetric Difference: {'orange', 'apple', 'lime', 'grapefruit'}
+```
+
+In addition to the operators there are also
+method versions:
+
+- s1.union(s2) is the equivalent of s1 | s2
+- s1.intersection(s2) is the equivalent s1 & s2
+- s1.difference(s2) is the equivalent of s1 - s2
+- s1.symmetric_difference(s2) is the equivalent of s1 ^ s2
 
 # Dictionaries
 
