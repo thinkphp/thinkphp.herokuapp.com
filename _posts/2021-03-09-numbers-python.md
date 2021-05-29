@@ -19,3 +19,6 @@ completely different approaches to writting them (apart from '.' of course).
 This actually comes down to efficiently in terms of both the amount of memory needed to represent a number and the amount of processing power needed to work with the number. In essence integers are simpler to work with and can take up less memory than real numbers. Integers are whole numbers that do not need to have a fractional element. When two integers are added, multiplied or subtracted they will always generate another integer number.
 
 In Python real numbers are represented as floating point numbers or floats. These can contain a fractional part (the bit after the decimal point). Computers can best work with integers(actually of course only really 1s or 0s). They therefore need a way to represent a floating point or real number. Typecally this involves representing the digits before and after the decimal point.
+
+The term floating point is derived from the fact
+that there is no fixed number of digits before and after the decimal point; that is, the decimal point can float.
