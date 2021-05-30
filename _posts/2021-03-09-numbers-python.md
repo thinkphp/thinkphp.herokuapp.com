@@ -217,6 +217,14 @@ True
 Arithmetics Operators are used to perform some form of mathematical operation such as addition, subtraction, multiplication and division. In Python these operators are represented using  by one or two characters. The following tables
 summarises the Python arithmetic operators:
 
-```
-
+``` python
+Operator  Description
++         Add left and right values together
+-         Subtract right value from left value  
+*         Multiple the left and right values
+/         Divide the left value by the r value
+//        Integer division (ignore any r)
+%         Modulus - only returns any reminder
+**        Exponent or power operator
+          the left value raised to the power of the right 
 ```
