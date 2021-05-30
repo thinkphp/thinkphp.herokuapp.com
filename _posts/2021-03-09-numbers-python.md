@@ -22,3 +22,29 @@ In Python real numbers are represented as floating point numbers or floats. Thes
 
 The term floating point is derived from the fact
 that there is no fixed number of digits before and after the decimal point; that is, the decimal point can float.
+
+Operation on floating point numbers such as addition, subtract, multiplication, etc, will generate new real numbers which must also be represented. It is also much harder to ensure that
+the results are correct as potentially very small or very large fractional parts may be involved. Indeed, most floating-point numbers are actually
+represented as approximations. This means that one of the challanges in handling floating-point numbers is in ensuring that approximations lead to resonable results. If this is not done appropriately, small discrepancies in the approximations can snowball to the point where the final results become meaningless.
+
+As a result, most computer programming languages treat such as 4 as being different from real numbers such as 4.0000004.
+
+Complex numbers are an extension of real numbers in which all numbers are expressed as a sum of a real part and an imaginary part. Imaginary numbers are real multiples of the imaginary unit (the square root of -1), where the imaginary part is often written in mathematics using an "i", while in engineering it is often written using a "j".
+
+Python has built-in support for complex numbers, which are written using the engineering notation; that is the imaginary part with a j suffix, e.g. 3 + 3j.
+
+## Integers.
+
+## Converting to Ints.
+
+## Floating-Point Numbers.
+
+## Converting to Floats
+
+## Converting an Input String into a Floating Point Number.
+
+## Complex Number
+
+## Boolean Values
+
+## Arithmetic Operators
