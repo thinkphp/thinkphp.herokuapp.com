@@ -145,7 +145,7 @@ The imaginary part of the number, or b, is the real number coefficient of the pu
 
 The letter "j" is used in Python to represent the imaginary part of the number, for example:
 
-```
+```python
 c1 = 1j
 c2 = 2j
 print('c1:', c1, ', c2:', c2)
@@ -164,4 +164,59 @@ As we can see the type of the number is complex and when the number is printed d
 
 ## Boolean Values
 
+Python supports another Type called Boolean; a boolean type can only be one of True or False(or something else). Note that these values are True(with the capital T) and False (with a capital F); true and false in Python are not the same thing and have no meaning on their own.
+
+The equivalent of the int or float class for Boolean is bool.
+
+The following example illustrates storing  the two Boolean values into a variable all_ok:
+
+```python
+all_ok = True
+print(all_ok)
+all_ok = False
+print(all_ok)
+print(type(all_ok))
+
+#The output of this is:
+
+True
+False
+<class 'bool'>
+```
+
+The Boolean type is actually a sub type of integer (but with only the values True and False) so it is easy to translate between the two, using the functions int() and bool() to convert from Booleans to Integers and vice versa. For example:
+
+```Python
+print(int(True))
+print(int(False))
+print(bool(1))
+print(bool(0))
+# which produces
+1
+0
+True
+False
+```
+
+You can also convert strings into Booleans as long as the strings contain either True or False (and nothing else). For example:
+
+``` python
+status = bool(input('OK to proceed: '))
+print(status)
+print(type(status))
+
+# when we run this
+
+OK to proceed: True
+True
+<class 'bool'>
+```
+
 ## Arithmetic Operators
+
+Arithmetics Operators are used to perform some form of mathematical operation such as addition, subtraction, multiplication and division. In Python these operators are represented using  by one or two characters. The following tables
+summarises the Python arithmetic operators:
+
+```
+
+```
