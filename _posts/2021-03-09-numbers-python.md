@@ -35,15 +35,104 @@ Python has built-in support for complex numbers, which are written using the eng
 
 ## Integers.
 
+All integers values, no matter how big or how small are represented by the integral type in Python. For example:
+```
+x = 1
+print(x)
+print(type(x))
+x = 10000000000000000000000000001
+print(x)
+print(type(x))
+# if this code is run then the output will show
+# that both numbers are of type int
+1
+<class 'int'>
+10000000000000000000000000001
+<class 'int'>
+```
+
 ## Converting to Ints.
+
+It is possible to convert another type into an integer using int() function. For example, if you want to convert a String into an Int(assuming the string contains an integer number) then we can do this using the int() function
+
+```python
+total = int('100')
+```
+
+This can be useful when used with the input() function.
+
+The input() function always returns a string. If you want to ask the user to input an integer number, then we will need to convert the string returned from the input() function into an int. We can do this by wrapping the call to the input() function in a call to the int() function, for exaple:
+
+```python
+age = int(input("Please enter your age:"))
+print(type(age))
+print(age)
+# Running this gives:
+Please enter your age: 21
+<class 'int'>
+21
+```
+
+The function int() can be used also to convert a floating-point number into an int, par example:
+
+```
+i = int(1.0)
+```
 
 ## Floating-Point Numbers.
 
+Real Numbers, or floating-point numbers, are represented in Python using the IEEE 754-double precision binary floating-point number format; for the most part you do not need to know this, but it is something you can look up and read if you wish.
+
+The type used to represent a floating-point number is called float.
+
+Python represents floating point number using a decimal point to separate the whole part from the fractional part of the number, for example:
+
+```
+exchange_rate = 1.84
+print(exchange_rate)
+print(type(exchange_rate))
+# this produces output indicating that we are storing the number 1.84 as a floating point number.
+```
+
 ## Converting to Floats
+
+As with integers it is possible to convert other types such as an int or a string into a float. this is done using float() function.
+
+```python
+int_value = 1
+string_value = '1.5'
+float_value = float(int_value)
+print('int value as a float:', float_value)
+print(type(float_value))
+float_value = float(string_value)
+print('string value as a float:', float_value)
+print(type(float_value))
+
+# the output from this code snippet is:
+int value as a float: 1.0
+<class 'float'>
+string value as a float: 1.5
+<class 'float'>
+```
 
 ## Converting an Input String into a Floating Point Number.
 
+As we have seen the input() function returns a string; what happens if we want the user to input a floating point number or real number? As we have seen above, a string can be converted into a floating point number using the float() function and therefore we can use this approach to convert an input from the user into a float:
+
+```python
+exchange_rate = float(input("Please enter the exchange rate to
+use: "))
+print(exchange_rate)
+print(type(exchange_rate))
+#using this we can input the string 1.83 and convert it into a floating-point number.
+Please enter the exchange rate to use: 1.83
+1.83
+<class 'float'>
+```
+
 ## Complex Number
+
+Complex Numbers are Python third type of built-in numeric type. A complex number is defined
 
 ## Boolean Values
 
