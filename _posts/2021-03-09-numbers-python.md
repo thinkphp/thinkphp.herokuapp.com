@@ -217,7 +217,7 @@ True
 Arithmetics Operators are used to perform some form of mathematical operation such as addition, subtraction, multiplication and division. In Python these operators are represented using  by one or two characters. The following tables
 summarises the Python arithmetic operators:
 
-``` python
+```
 Operator  Description
 +         Add left and right values together
 -         Subtract right value from left value  
@@ -226,5 +226,92 @@ Operator  Description
 //        Integer division (ignore any r)
 %         Modulus - only returns any reminder
 **        Exponent or power operator
-          the left value raised to the power of the right 
+          the left value raised to the power of the right
+```
+
+### Integer Operations
+
+### Negative Number Integer Division
+
+### Floating Point Number Operators
+
+### Integers and Floating Point Operations
+
+### Complex Numbers Operators
+
+## Assignment Operators
+
+In chapter 3. we briefly introduced the assignment "=" operator which was used to assign a value to a variable. There are in fact several different assignment operators that could be used with numerical values.
+
+These assignment operators are actually referred to as compound operators as they combine together a numeric operation (such as add) with the assignment operator. For example, the += compound operator is a combination of the add operator and the = operator such that
+```
+x = 0
+x += 1
+# has the same behaviour as x = x + 1
+# some developers like to use these compound operators as they are more concise to write and can be interpreted more efficiently by the Python interpreter.
+The following table provides a list of the available compound operators.
+
+operator Description
++=       add the value to the left-hand var  
+         x +=1 equivalent x = x + 1
+-=       subtract the value to the left-hand var
+         x -= 1 equivalent x = x - 1
+*=       multiple the left hand var by the value
+         x *=2 equivalent x = x * 2
+/=       divide the var value by the right val
+          a /= 2 equivalent a = a / 2 
+//=      use integer division
+          a //= 2 equivalent a = a // 2   
+%=       apply modulus operator
+          a %= 2 equivalent a = a % 2   
+**=      apply power operator
+         x **=2 equivalent x = x ** 2
+```
+
+
+
+
+## None Value
+
+Python has a special type, the NoneType, with a single value, None;
+This is used to represent null values or nothingness.
+It is not the same as False or an empty string or 0; it is non-value. It can be used when you need to create a variable but you do not have an initial value for it. For example:
+
+winner = None
+You can then test for the presence of None using "is" and "is not", for example:
+print(winner is None)
+
+This will print out True if and only if the variable winner is currently set to None.
+
+Alternatively you can also write:
+
+print(winner is not None)
+
+Which will print out True only if the value winner is not None.
+
+Several examples using the value None and the "is" and "is not" operators are given below:
+
+```
+winner = None
+print('winner:', winner)
+print('winner is None:', winner is None)
+print('winner is not None:', winner is not None)
+print(type(winner))
+print('Set winner to True')
+winner = True
+print('winner:', winner)
+print('winner is None:', winner is None)
+print('winner is not None:', winner is not None)
+print(type(winner)
+
+# the output of this codesnippet is:
+winner: None
+winner is None: True
+winner is not None: False
+<class 'NoneType'>
+Set winner to True
+winner: True
+winner is None: False
+winner is not None: True
+<class 'bool'>
 ```
