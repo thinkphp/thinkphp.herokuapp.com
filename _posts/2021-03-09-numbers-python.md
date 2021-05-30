@@ -119,7 +119,7 @@ string value as a float: 1.5
 
 As we have seen the input() function returns a string; what happens if we want the user to input a floating point number or real number? As we have seen above, a string can be converted into a floating point number using the float() function and therefore we can use this approach to convert an input from the user into a float:
 
-```python
+```
 exchange_rate = float(input("Please enter the exchange rate to
 use: "))
 print(exchange_rate)
@@ -132,7 +132,35 @@ Please enter the exchange rate to use: 1.83
 
 ## Complex Number
 
-Complex Numbers are Python third type of built-in numeric type. A complex number is defined
+Complex Numbers are Python third type of built-in numeric type. A complex number is defined by a real part and an imaginary part and has the form a + bi (where a and b are real numbers and i is part imaginary)
+
+a + bi
+
+a = real part
+b = imaginary part
+
+The real part of the number (a) is the real number that is being added to the pure imaginary number.
+
+The imaginary part of the number, or b, is the real number coefficient of the pure imaginary number.
+
+The letter "j" is used in Python to represent the imaginary part of the number, for example:
+
+```
+c1 = 1j
+c2 = 2j
+print('c1:', c1, ', c2:', c2)
+print(type(c1))
+print(c1.real)
+print(c1.imag)
+
+#We can run this code and the output will be:
+c1: 1j , c2: 2j
+<class 'complex'>
+0.0
+1.0
+```
+
+As we can see the type of the number is complex and when the number is printed directly is is done so by printing both the real and imaginary parts together. Do not worry if this is confusing; it is unlikely that you will need to use complex numbers unless you are doing some specific coding, for example within a scientific field.
 
 ## Boolean Values
 
