@@ -231,13 +231,147 @@ Operator  Description
 
 ### Integer Operations
 
+Two integers can be added together using +, for example 10 + 5.  In turn two integers can be subtracted (10 -5) and multiplied (10 * 4). Operations such as +, -, and * between integers always produce integers results.
+
+This is illustrated below:
+
+```python
+home = 10
+away = 15
+print(home + away)
+print(type(home + away))
+print(10 * 4)
+print(type(10*4))
+goals_for = 10
+goals_against = 7
+print(goals_for - goals_against)
+print(type(goals_for - goals_against))
+# The output from this is:
+25
+<class 'int'>
+40
+<class 'int'>
+3
+<class 'int'>
+```
+
+However you may notice that we have missed out division with respect to integers, why is this? It is because it depends on which division operator you use as to what the returned type actually is.
+
+For example, if we divide the integer 100 by 20 then the result you reasonably expect to produce might be 5; but is not, it is actually 5.0
+```python
+print(100/20)
+print(type(100/20))
+#The output is:
+5.0
+<class 'float'>
+```
+
+As you can see from this the typeof the result is float(that is floating point number). So why is this the case?
+The answer is that division does not know whether the two integers involved divide into one another exactly or not(i.e. is there a reminder). It therefore defaultsto producing a floating point or real number which can have a fractional part. This is of course necessaryin some situations, for example if you divide 3 by 2;
+
+```python
+res1 = 3/2
+print(res1)
+print(type(res1))
+# In this case 3 cannot be exactly divided  by 2, we might say
+that 2 goes into 3 once with remainder; this is what is shown by Python
+1.5
+<class 'float'>
+```
+
+The result is that 2 goes into 3, 1.5 times with the type of the result being a float.
+If you are only interested in the number of times 2 does  go into 3 and are happy to ignore the fractional part then there is an alternative version of the divide operator //. The operator is referred to as the integer division operator.
+
+```python
+res1 = 3//2
+print(res1)
+print(type(res1))
+# which produces
+1
+<class 'int'>
+```
+
+But what if you are only interested in the remainder part of a division, the integer division operator has lost part? Well in this case you can use the modulus operation '%'. This operator returns the remainder of a division: for example:
+
+```
+print('Modulus division 4 % 2:', 4 % 2)
+print('Modulus division 3 % 2:', 3 % 2)
+# which produces:
+Modulus division 4 % 2: 0
+Modulus division 3 % 2: 1
+```
+
+A final integer operator we will look is the power operator that can be used to raise an integer by a given power, for example 5 to the power of 3. The power operator is "**", this is illustrated below:
+
+```python
+a = 5
+b = 3
+print(a ** b)
+# which generates the number 125
+```
+
 ### Negative Number Integer Division
+
+It is worth just exploring what happens in integer and true division when negative numbers are involved. For example:
+
+```Python
+print('True division 3/2:', 3 / 2)
+print('True division 3//2:', -3 / 2)
+print('Integer division 3//2:', 3 // 2)
+print('Integer division 3//2:', -3 // 2)
+#
+# The output from this is:
+True division 3/2: 1.5
+True division 3//2: -1.5
+Integer division 3//2: 1
+Integer division 3//2: -2
+```
+
+The first three of these might be exactly what you expect given
+our earlier discussion; however, the ouput of the last example may seem a bit surprising, why does 3//2 generates 1 but -3//2 generates -2?
+
+The answer is that Python always rounds the result of integer division towards minus infinity (which is the smallest negative number possible). This means it pulls the result of the integer division to the smallest possible number, 1 is smaller thatn 1.5, but -2 is smaller than -1.5.
 
 ### Floating Point Number Operators
 
+We also have the multiple, add, subtract and divide operations available for floating point numbers. All of these operators produce new floating point numbers:
+
+```Python
+print(2.3 + 1.5)
+print(1.5 / 2.3)
+print(1.5 * 2.3)
+print(2.3 - 1.5)
+print(1.5 - 2.3)
+# these statements produce the output given below:
+3.8
+0.6521739130434783
+3.4499999999999997
+0.7999999999999998
+-0.7999999999999998
+```
 ### Integers and Floating Point Operations
 
+
 ### Complex Numbers Operators
+
+Of course you can use operators such as multiply, add, subtract, and divide with complex numbers. For example:
+```python
+c1 = 1j
+c2 = 2j
+c3 = c1 * c2
+print(c3)
+# You can run this code and the output will be:
+(-2 + 0j)
+```
+
+You can also convert another number of a string into a complex number using complex() function. For example:
+
+```
+complex(1) # generates(1 + 0j)
+```
+
+In addition the math modules provides mathematical functions for complex numbers.
+
 
 ## Assignment Operators
 
@@ -259,7 +393,7 @@ operator Description
 *=       multiple the left hand var by the value
          x *=2 equivalent x = x * 2
 /=       divide the var value by the right val
-          a /= 2 equivalent a = a / 2 
+          a /= 2 equivalent a = a / 2
 //=      use integer division
           a //= 2 equivalent a = a // 2   
 %=       apply modulus operator
