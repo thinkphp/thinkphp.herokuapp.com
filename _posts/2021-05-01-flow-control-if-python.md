@@ -17,6 +17,7 @@ A comparison operator is an operator that performs some form of test and returns
 
 These are operators that we usein everyday life all the time. For example, do I have enough money to buy lunch, or is this shoe in my size, etc. In Python there are a range of comparison operators represented by typically one or two characters. These are:
 
+```
 operator       Description
 ==  3 == 3     Tests if two values are equal.
 !=  3 != 3     Tests if two values are not equal to each other.
@@ -24,6 +25,7 @@ operator       Description
 >   3 > 6      test if the left hand value is greater than right hand.
 <=  1 <= 33    test if the left hand value is less or equat than righ hand.
 >=  1 >= 11    test if the left hand value is greater or equal than righ hand.
+```
 
 ### Logical operators
 
@@ -31,11 +33,12 @@ In addition to comparison operators, Python also has logical operators. Logical 
 
 There are three logical operators in Python these are listed below:
 
+```
 Operator:   Description
 and         Returns True if both left and right are True.
 or          Returns True if either left or right is True.
-not         Returns True if the value beind tested is False.
-
+not         Returns True if the value being tested is False.
+```
 
 ## The If Statement
 
