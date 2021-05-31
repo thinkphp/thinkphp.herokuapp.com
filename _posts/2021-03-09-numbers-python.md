@@ -351,6 +351,18 @@ print(1.5 - 2.3)
 ```
 ### Integers and Floating Point Operations
 
+Any operation that involves both integers and floating point numbers will always produce a floating point number. That is, if one of the sides of an operation such as, add, subtract, multiply and divide is a floating point number then the result will be a floating point number. For example, given an integer 3 and the floating point number 0.1 If we multiple them together then we get a floating point number:
+
+```python
+i = 3 * 0.1
+print(i)
+#Executing this we get:
+0.3000000000004
+```
+
+Which may or may not have been what you expected (you might have expected 0.3); however this hightlights the comment at the start of this chapter relating to floating point numbers being represented as an approximation within a computer system. If this was part of a larger calculation (such as the calculationof the amount of interest to be paidon a very large loan overa 10 year period) then the end result might well be out by a significant amount.
+It is possible to overcome this issue using one of Python modules or libraries. For example, the decimal module provide the Decimal Class that will appropriately handle multiplying 3 and 0.1;
+
 
 ### Complex Numbers Operators
 
