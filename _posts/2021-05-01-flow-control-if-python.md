@@ -42,9 +42,80 @@ not         Returns True if the value being tested is False.
 
 ## The If Statement
 
+An If statement is used as a form of conditional programming; something you probably do every day in the real world. That is, you need to decide whether you are going to have a tea or coffee or to decide if you have toast or a muffin for breakfast. In each
+of these cases, you are making a choice; usually based on some information such as I had coffee yesterday, so I will have tea today.
+In Python such choices are represented programmaticaly by the If condition statement.
+In this construct if some condition is True some action is performed, optionally it is not True some other action may be performed instead.
+
 ### Working with an If Statement
 
+In its most basic from, the If statement is:
+
+If <condition-evaluating-to-boolean>:
+statement
+
+Note that the condition must evaluate to True or False (or an equivalent value - see later in this chapter). If the condition is True then we will execute the indented statement.
+Note this indentation, this is very important in Python, layout of the code is very very important in Python. Indentation is used to determine how one piece of code should be associated with another piece of code.
+
+Let us look at a simple example:
+
+```Python
+num = int(input('Enter a number: '))
+if num < 0:
+   print(num, 'Is negative')
+```
+
+In this example, the user has input the number. If it is less than zero a message noting this will be printed to the user. IF the number is positive; then nothing will be output.
+For example:
+Enter a number: -1
+-1 is negative
+
+If we wish to execute multiple statements when our condition is True we can indent several lines; in fact all lines indented to the same level after the If statement will automatically be part of the If statement. For example:
+
+```
+num = int(input("Enter another number: "))
+if num > 0:
+   print(num, 'is positive')
+   print(num, 'squared is: ', num * num)
+print("bye")   
+# If we now run this program and input 2 then we will see
+Enter another number: 2
+2 is positive
+2 squared is 4
+Bye
+```
+How ever if we enter the value -1 then we get
+Enter another number:
+Bye
+
+Note that neither of the indented lines was executed.
+This is because the two indented lines are associated with the If
+statement and will only be executed if the Boolean condition evaluates returns True. However the statement print("Bye") is not part of the if statement; it is merely the next statement to executed after the If statement (and its associated print() statements) have finished.
+
 ### Else in an If Statement
+
+We can also define an else part of an If statement; this is an optional element that can be run if the conditional part of the if statement return False. For example:
+
+```
+num = int(input('Enter yet another number: '))
+if num < 0:
+print('Its negative')
+else:
+print('Its not negative'
+```
+
+Now when this code is executed, if the number entered is less than zero then the first print() statement will be run otherwise(else) the second print() statement will be run. However, we are guaranteed that at least one(and at most one) if the print() statements will execute. For example in run 1 if we enter the value 1:
+```
+Enter yet another number: 1
+Its not negative
+```
+
+And the run 2 if we enter the value -1
+```
+Enter yet another number: -1
+Its negative
+```
+
 
 ### The Use of Elif
 
