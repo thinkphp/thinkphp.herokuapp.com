@@ -219,3 +219,71 @@ Note that the string "Done" is printed out in both cases as it is the first line
 
 Note that the break statement can come anywhere within the block of code
 associated with the loop contruct. (whether that is a for loop or a while loop). This means that there can be statements before it and after it.
+
+### Continue Loop Statement
+
+The continue statement also affects the flow of control within the looping constructs for and while. However, it does not terminate the while loop, rather it only terminates the current iteration round the loop. This allows you to skip over part of a loop's iteration for a particular value, but then to continue with the remaining values in the sequence.
+
+```
+ Start
+  |
+  | for each item in sequence
+  |
+ last item has reached? YES ---- > STOP
+  |
+  | NO
+  |
+  Start to process statements
+  |
+  |
+  Continue? ---- NO ---> Process remainder of loop
+  ||
+  || YES ----> Go to Last Item has reached?
+
+```
+
+A guard if statement can be used to determine when to continue statement should be executed.
+
+As with the break statement, the continue statement can come anywhere within the body of the looping construct. This means that you can have some statements that will be executed every value in the sequence and some that are only executed when the continue statement is not run.
+
+This is shown below. In this program the continue statement is executed only for old numbers and thus the two print() statements are only if the value of i is even:
+
+```python
+for i in range(0, 10):
+    print(i, ' ', end = '')
+    if i % 2 == 1:
+       continue;
+    print('Hey it s an even number')
+    print('We love even numbers!')
+print('Done')       
+```
+When we run this code we get:
+
+```
+0
+we
+1
+we
+3
+we
+5
+we
+7
+we
+9
+hey its an even number
+love even numbers
+2 hey its an even number
+love even numbers
+4 hey its an even number
+love even numbers
+6 hey its an even number
+love even numbers
+8 hey its an even number
+love even numbers
+Done
+```
+
+As we can see, we only print out the messages about a number being even when the values are 0,2,4,6 and 8
+
+### For Loop with Else
