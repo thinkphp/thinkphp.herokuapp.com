@@ -287,3 +287,75 @@ Done
 As we can see, we only print out the messages about a number being even when the values are 0,2,4,6 and 8
 
 ### For Loop with Else
+
+
+### Dice Roll Game
+
+The following short program illustrates how a while loop can be used to control the execution of the main body of code. In this game we will continue to roll a pair of dice until the user indicates that they do not want to roll again (we use the random module for this which is discussed in the next chapter). When this occurs the while loop will terminate:
+
+```python
+import random
+
+def main():
+    MIN = 1
+    MAX = 10
+
+    roll_again = 'y'
+    while roll_again == 'y':
+          print("Rolling the dices...")
+          print("The values are ...")
+          dice1 = random.randint(MIN,MAX)
+          print(dice1)
+          dice2 = random.randint(MIN,MAX)
+          print(dice2)
+          roll_again = input("Roll the dices again? y/n")
+    print("bye")
+main()
+```
+
+When we run this program the results of rolling two dice are shown. The program will keep looping and printing out the two dice value until the user indicates that they no longer want to roll the dice:
+
+```
+Rolling the dices...
+The values are....
+2
+6
+Roll the dices again? (y / n): y
+Rolling the dices...
+The values are....
+4
+1
+Roll the dices again? (y / n): y
+Rolling the dices...
+The values are....
+3
+6
+Roll the dices again? (y / n): n
+```
+
+### Online Resources
+
+See the Python Standard Library documentation for:
+
+* https://docs.python.org/3/tutorial/controlflow.htm the online Python flow of control tutorial.
+
+
+###  7.10 Exercices
+
+There are two exercices for this chapter. The first exercise will require a simple for loop while second is more complicated requiring nested for and a break statement.
+
+### 7.10.1 Calculate the Factorial of a Number
+
+Write a program that can find the factorial of any given number. For example, find the factorial of the number 5 (often written as a 5!) which is 1 * 2 * 3 * 4 * 5 and equals 120.
+
+The factorial is not defined for negative numbers and the factorial of ZERO is 1; that is 0!=1
+
+Your program should take as input an integer from the user (you can reuse your logic from the last chapter to verify that they have entered a positive integer value using isnumeric())
+
+You should:
+
+* If the number is less than Zero return with an error message.
+* Check to see if the number is Zero - if it is then the answer is 1 - print this out.
+* Otherwise use a loop to generate the result and print it out.
+ 
+### 7.10.2 Print all the Primes Numbers in a Range
