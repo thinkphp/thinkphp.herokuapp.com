@@ -288,6 +288,40 @@ As we can see, we only print out the messages about a number being even when the
 
 ### For Loop with Else
 
+A for loop can have an optional else block at the end of the loop. The else part is executed if and only if all items in the sequence are processed. The for loop may fail to process all elements in the loop if for some reason an error occurs in your program (for example if your have a syntax error) or if you break the loop.
+
+Here is an example of a for loop with an else part:
+
+```python
+# only print code if all iterations completed over a list
+print('only print code if all iterations completed over a list')
+num = int(input("Enter a number to check for: "))
+for i in range(0, 6):
+    if i == num:
+       break
+    print(i, ' ', end = '')
+else:
+    print()
+    print("All Iterations Succcessful!")     
+```
+
+If we run this code and enter the integer value 7 as the number to check for; then the else block executes as the if test within the for statement is never  True and thus the loop is never broken, and all values are processed.
+
+```
+Only print code if all iterations completed
+Enter a number to check for: 7
+0 1 2 3 4 5
+All iterations successful
+```
+
+However, if we enter the value 3 as the number to check for; then the if statement will be True when the loop variable 'i' has the value 3; thus only be 0,1 and 2 will be processed by the loop. In this situation the else part will not be executed because not all the values in the sequence were processed:
+
+```
+Only print code if all iterations completed
+Enter a number to check for: 3
+0 1 2
+```
+
 
 ### Dice Roll Game
 
@@ -357,5 +391,5 @@ You should:
 * If the number is less than Zero return with an error message.
 * Check to see if the number is Zero - if it is then the answer is 1 - print this out.
 * Otherwise use a loop to generate the result and print it out.
- 
+
 ### 7.10.2 Print all the Primes Numbers in a Range
