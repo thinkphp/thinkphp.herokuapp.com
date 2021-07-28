@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.6.3'
-gem 'bundler', '2.2.16'
+gem 'bundler', '2.2.21'
 gem "jekyll", '~> 4.0'
 gem "rack", ">= 2.1.4"
 gem 'rack-jekyll'
