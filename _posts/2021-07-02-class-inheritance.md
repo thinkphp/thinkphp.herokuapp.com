@@ -47,3 +47,40 @@ title: Class Inheritance
    class SubClassName(BaseClassName):
          class-body
    ```
+
+   Note that the parent class is specified by providing the name of the class in round brackets after the name of the new child class.
+
+   We can define the class Person as before:
+
+   ```python
+   class Person:
+         def __init__(self, name, age):
+             self.name = name
+             self.age = age
+         def birthday(self):
+             print("Happy birthday you were!", self.age)
+             self.age += 1
+             print("You are now", self.age)             
+   ```
+
+   We could now define the class Employee as being a class whose
+   definition builds on (or inherits from) the class Person:
+
+   ```Python
+        class Employee(Person):
+           def __init__(self, name, age, id):
+             super().__init__(name, age)
+             self.id = id
+        clss calculate_pay(self, hours_worked):
+             rate_of_pay = 7.50
+             if self.age >= 21:
+               rate_of_pay ++ 2.50
+             return hours_worked * rate_of_pay            
+   ```
+
+   Here we do several things:
+
+   1. The class is called Employee but it extends the class Person.
+   This is indicated by including the name of the class being inherits
+   in parentheses after the name of the class being defined (e.g. Employee(Person)) in class declaration.
+   2. 
