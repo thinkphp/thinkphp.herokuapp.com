@@ -66,7 +66,7 @@ title: Class Inheritance
    We could now define the class Employee as being a class whose
    definition builds on (or inherits from) the class Person:
 
-   ```Python
+   ```python
         class Employee(Person):
            def __init__(self, name, age, id):
              super().__init__(name, age)
@@ -83,4 +83,24 @@ title: Class Inheritance
    1. The class is called Employee but it extends the class Person.
    This is indicated by including the name of the class being inherits
    in parentheses after the name of the class being defined (e.g. Employee(Person)) in class declaration.
-   2. 
+   2. Inside the __init__ method we reference the __init__() method defined in the class Person and used to initialise instances of that class (via the super().__init__() reference). This allows whatever initialisation is required for Person to happen. This is called from within the Employee class's __init__() which then allows any initialisation required by the Employee to occur. Note
+   that the call to the super().__init__() initialiser can come everywhere within the Employee.__init__() method; but by convention it comes first to ensure that whatever the class Person does during initialisation does not over write what happens in the Employee class.
+   3. All instances of the class Person have a name, and age and have the bevaviour birthday().
+   4. All instances of the class Employee have a name, and age and an ID and have the behaviour birthday() and calculate_pay(house_worked).
+   5. The method calculate_pay() defined in the Employee class can access the attributes name and age just as it can access the attribute ID. In fact, it uses the employee's age to determine la rate of pay to apply.
+
+   We can go further, and we can subclass Employee, for example with the class SalesPerson:
+
+   ```python
+   class SalesPerson(Employee):
+         def __init__(self, name, age, id, region, sales):
+             super().__init__(name, age, id)
+             self.region = region
+             self.sales = sales
+         def bonus(self):
+             return      self.sales * 0.5
+   ```
+
+   Now we can say that the class SalesPerson has a name, an age and an Id as well as a region and a sales total. It also has the methods birthday(), calculate_pay(hours_worked) and bonus().
+
+   In this case the SalesPerson.__init__() method calls the Employee.__init__() method as that is the next class up hierarchy and thus we want to run that classes initialisation behaviour before we set up the SalesPerson class (which of course in turn runs the Person classes initialisation behavoir).
