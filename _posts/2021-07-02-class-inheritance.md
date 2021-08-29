@@ -104,3 +104,40 @@ title: Class Inheritance
    Now we can say that the class SalesPerson has a name, an age and an Id as well as a region and a sales total. It also has the methods birthday(), calculate_pay(hours_worked) and bonus().
 
    In this case the SalesPerson.__init__() method calls the Employee.__init__() method as that is the next class up hierarchy and thus we want to run that classes initialisation behaviour before we set up the SalesPerson class (which of course in turn runs the Person classes initialisation behavoir).
+
+   We can now write code such as:
+
+   ```python
+   print('Person')
+   p = Person('John', 55)
+   print(p)
+   print('-' * 25 )
+   print('Employee')
+   e = Employee('Denise', 51, 7468)
+   e.birthday()
+   print('e.calculate_pay(40):', e.calculate_pay(40))
+   print('-' * 25 )
+   print('SalesPerson')
+   s = SalesPerson('Steve', 21, 1468, 'UK', 30000.0)
+   s.birthday()
+   print('e.calculate_pay(40):', e.calculate_pay(40))
+   print('e.bonus():', s.bonus())
+   ```
+
+   with the output being:
+
+   ```
+   Person
+John is 54
+-------------------------
+Employee
+Happy birthday you were 51
+You are now 52
+e.calculate_pay(40): 400.0
+-------------------------
+SalesPerson
+Happy birthday you were 21
+You are now 22
+s.calculate_pay(40): 400.0
+s.bonus(): 15000.0
+   ```
