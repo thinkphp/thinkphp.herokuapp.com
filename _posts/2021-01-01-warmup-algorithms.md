@@ -64,4 +64,8 @@ def factorial4( first, last ):
 
 ## Third example: Euclid
 
-## Fourth example: Permutation
+## The fourth example: Permutation
+
+## The fifth example: Golbach s Conjecture
+
+## The sixth example: Sequence Collatz
