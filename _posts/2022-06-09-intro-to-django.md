@@ -42,11 +42,11 @@ describing the layout of the webpage, but can also be in other
 file formats to present other results, but we will concentrate
 on .html files.
 
-'''
+```html
 <h1>My Homepage</h1>
 
 <p>My name is {{ firstname }}.</p>
-'''
+```
 
 ## URLs
 
