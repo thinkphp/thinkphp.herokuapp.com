@@ -49,3 +49,15 @@ on .html files.
 '''
 
 ## URLs
+
+Django also provides a way to navigate around the different pages
+in a website.
+
+When a user requests a URL, Django decides what view it will send it to.
+
+This is done in a file called urls.py
+
+## So, what is going on?
+
+When you have installed Django and created you first Django web application, and the browser requests the URL, this is basically
+what happens:
