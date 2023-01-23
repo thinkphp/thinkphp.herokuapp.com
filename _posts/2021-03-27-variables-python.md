@@ -156,4 +156,4 @@ what are known as global variables. That is there are accessible anywhere in our
 
 - The global keyword.
 
-- Nonlocal variables.
+- NonLocal variables.
